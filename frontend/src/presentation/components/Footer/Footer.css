@@ -1,15 +1,15 @@
 footer {
+   position:absolute;
+   width:100%;
     background-color: #F3D743;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    z-index:10;
 }
 
 .footerContainer {
-
-    width: 20rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -18,14 +18,15 @@ footer {
 }
 
 .footerOptions {
-    border: 2px solid green;
-    font-size: 1.8rem;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
+    gap:1.5rem;
+    margin:0;
+    text-align: center;
 }
 
 .linkContainer {
-    border: 2px solid yellow;
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
@@ -40,17 +41,18 @@ footer {
 
 .footerLogo {
     width: 20rem;
-    border: 2px solid yellow;
 }
 
 .socialNetworks {
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
 }
 
+.derContainer strong {
+     font-size: 1.5rem;
+}
 .logoFacebook {
     width: 30px;
 }

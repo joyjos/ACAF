@@ -14,8 +14,8 @@ export default function Footer() {
                 <p>Multimedia</p>
                 <p>Hazte socio</p>
                 </section>
-                <section className="2024Container">
-                    <p>© 2024 ACAF. Todos los derechos reservados.<strong>AVISO LEGAL.</strong></p>
+                <section className="derContainer">
+                    <p> © 2024 ACAF. Todos los derechos reservados.  <strong>AVISO LEGAL</strong></p>
                 </section>
             </section>
             <section  className="socialNetworks">

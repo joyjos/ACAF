@@ -19,7 +19,7 @@ footer {
 
 .footerOptions {
     border: 2px solid green;
-    font-size: 4rem;
+    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
 }
@@ -34,9 +34,8 @@ footer {
 
 .linkContainer p {
     flex-basis: calc(25% - 2rem);
-    /* Cada elemento ocupa el 25% del contenedor menos el espacio entre ellos */
     margin: 0;
-    /* Eliminar el margen por defecto de los párrafos */
+
 }
 
 .footerLogo {

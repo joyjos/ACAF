@@ -1,0 +1,29 @@
+.headerHomeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerHomeLogo {
+  width: 30rem;
+}
+
+.headerHomeOptions {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 5rem auto auto;
+}
+
+.headerHomeOptions p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 0.9);
+}
+
+.headerHomeIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.headerHomeOptions p, .headerHomeIcon {
+    cursor: pointer;
+}

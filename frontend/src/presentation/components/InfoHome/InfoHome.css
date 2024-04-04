@@ -1,0 +1,39 @@
+.infoHomeContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.infoHomeAssociationTitle {
+  font-size: 3rem;
+  margin: 5rem auto 2rem auto;
+}
+
+.infoHomeAssociationParagraph {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.infoHomeLine {
+  height: 0.2rem;
+  background-color: #f3d743;
+  border: none;
+  margin: 5rem auto 2rem auto;
+}
+
+.infoHomeActualityTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem auto 5rem auto;
+}
+
+.infoHomeImages {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.infoHomeImages img {
+  width: 50rem;
+  height: 40rem;
+  object-fit: cover;
+}

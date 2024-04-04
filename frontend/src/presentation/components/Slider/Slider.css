@@ -1,0 +1,19 @@
+.sliderContainer {
+  width: 100%;
+  height: 95.5rem;
+}
+
+.sliderTitle {
+  position: absolute;
+  font-size: 8rem;
+  top: 33rem;
+  left: 55rem;
+  z-index: 62;
+  text-align: center;
+  color: rgba(34, 34, 34, 0.9);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f3d743 !important;
+}

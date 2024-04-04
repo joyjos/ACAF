@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./Slider.css";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -7,8 +8,12 @@ import { Navigation } from "swiper/modules";
 
 export default function Slider() {
   return (
-    <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+    <div className="relative">
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="sliderContainer"
+      >
         <SwiperSlide>
           <img
             src="../../../../src/presentation/assets/imgSlider1.jpg"
@@ -28,6 +33,11 @@ export default function Slider() {
           />
         </SwiperSlide>
       </Swiper>
-    </>
+      <h1 className="sliderTitle">
+        ASOCIACIÓN <br />
+        CULTURAL ARENESCA
+        <br /> DE FESTEJOS
+      </h1>
+    </div>
   );
 }

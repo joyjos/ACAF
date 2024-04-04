@@ -1,8 +1,8 @@
 import "./HeaderHome.css";
 
-export default function HeaderHome() {
+export default function HeaderHome(isSticky) {
   return (
-    <div className="headerHomeContainer">
+    <div className={`headerHomeContainer ${isSticky ? "sticky" : ""}`}>
       <section>
         <img
           className="headerHomeLogo"

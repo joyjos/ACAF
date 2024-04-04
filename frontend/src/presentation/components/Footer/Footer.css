@@ -1,0 +1,20 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    width: 30rem;
+}
+
+.footerOptions {
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 5rem auto auto;
+}
+
+.footerOptions p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 0.9);
+}

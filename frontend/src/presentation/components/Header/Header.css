@@ -1,0 +1,11 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 80;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+  background-color: #f3d743;
+}

@@ -1,0 +1,55 @@
+.userSearchContainer{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  z-index: 500px;
+}
+
+.userSearchContainer__Field{
+  width: 60rem;
+  border-radius: 0.5rem;
+  border:1px solid #ACACAC;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:1.5rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+}
+
+.userButton{
+  background-color: var(--color-darkgreen)!important;
+  color:var(--color-mint)!important;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0.8rem;
+  border: none;
+}
+
+.userIcon{
+  font-size: 3rem!important;
+}
+
+.userSearchContainer__Field-Input{
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.userSearchContainer__Field-Input::placeholder{
+  font-size: 6rem;
+}
+
+.userSearchContainer__Field-Button{
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  margin: 0.8rem;
+  cursor: pointer;
+}
+
+.userSearchContainer__Field-Button img{
+  width: 2.5rem;
+}

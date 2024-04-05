@@ -1,7 +1,7 @@
-import Header from "../../adminComponents/header/Header";
+import AdminHeader from "../../adminComponents/header/AdminHeader";
 
 export default function AddMember() {
   return (
-   <Header/>
+   <AdminHeader/>
   )
 }

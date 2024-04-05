@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import arrowBack from "../../assets/arrowBack.png";
+import "./AdminHeader.css"
 
 export default function Header() {
   return (
-    <header>
+    <header className="headerAdmin">
       <img src={arrowBack} alt="arrow Back" />
       <Link to="/">
-        CERRAR SESIÓN
+      CERRAR SESIÓN
       </Link>
     </header>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./HeaderHome.css";
 import { useEffect, useState } from "react";
 
@@ -28,8 +29,12 @@ export default function HeaderHome() {
       />
       <div className={`headerHomeContainer ${isSticky ? "sticky" : ""}`}>
         <section className="headerHomeOptions">
-          <p>Quiénes somos</p>
-          <p>Fiestas</p>
+          <Link to="/aboutus">
+            <p>Quiénes somos</p>
+          </Link>
+          <Link to="/events">
+            <p>Fiestas</p>
+          </Link>
           <p>Actividades</p>
           <p>Noticias</p>
           <p>Multimedia</p>

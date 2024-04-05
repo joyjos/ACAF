@@ -1,0 +1,19 @@
+.aboutContainer{
+ display:flex;
+ flex-direction: column;
+ gap:2rem;
+ align-items: flex-start; 
+ padding:3rem;
+ margin :5rem;
+ margin-top:6rem;
+}
+
+.titleAbout{
+font-size:4rem;
+display:flex;
+align-items: flex-start;
+}
+
+.contentAbout {
+font-size:1.8rem;
+}

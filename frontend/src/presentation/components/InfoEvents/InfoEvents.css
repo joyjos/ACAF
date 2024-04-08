@@ -11,8 +11,10 @@
 .contentEvents {
   font-size: 1.8rem;
   text-align: justify;
+  width: 90%;
+  margin: 4rem 0;
 }
 
 .imgEvents {
-    
+    width: 40rem;
 }

@@ -38,7 +38,9 @@ export default function HeaderHome() {
           <p>Actividades</p>
           <p>Noticias</p>
           <p>Multimedia</p>
+          <Link to="/partners">
           <p>Hazte socio</p>
+          </Link>
           <img
             className="headerHomeIcon"
             src="../../../../src/presentation/assets/userLogo.svg"

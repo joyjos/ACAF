@@ -1,7 +1,7 @@
 import './Searcher.css';
 
 import PersonIcon from '@mui/icons-material/Person';
-const UsersSearcher = () => {
+const Searcher = () => {
 
   return (
     <section className="userSearchContainer">
@@ -16,10 +16,10 @@ const UsersSearcher = () => {
           placeholder=" Buscar socio por nombre, apellido, nº de socio"
         />
         <button className="userSearchContainer__Field-Button">
-          <img src="/src/assets/searchIcon.svg" alt="búsqueda icono" />
+          <img src="/src/assets/searchIcon.svg" alt="búsqueda" />
         </button>        
       </div>
     </section>
   )
 }
-export default UsersSearcher;
+export default Searcher;

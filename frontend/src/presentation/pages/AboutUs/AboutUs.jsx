@@ -8,7 +8,7 @@ export default function AboutUs() {
     <>
       <Header />
       <section className="aboutContainer">
-        <h1 className="titleAbout">Quienes somos</h1>
+        <h1 className="titleAbout">Quiénes somos</h1>
         <p className="contentAbout">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae

@@ -1,0 +1,18 @@
+.eventsContainter {
+  display: flex;
+  padding: 3rem;
+  margin: 10rem 10rem auto 10rem;
+}
+
+.titleEvents {
+  font-size: 4rem;
+}
+
+.contentEvents {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.imgEvents {
+    
+}

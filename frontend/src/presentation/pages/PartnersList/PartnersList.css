@@ -1,3 +1,9 @@
 h1 {
   font-size:3rem;
 }
+.containerPartnerList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}

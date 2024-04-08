@@ -1,13 +1,15 @@
 import "./PartnersList.css"
 import Searcher from "../../components/Searcher/Searcher";
-import HeaderHome from "../../components/HeaderHome/HeaderHome";
+
+import ContainerList from "../../components/ContainerList/ContainerList";
 
 const PartnersList = () => {
   return (
-    <div>
-      <HeaderHome />
+    <div className="containerPartnerList">
+      
       <h1>LISTADO DE SOCIOS</h1>
       <Searcher />
+      <ContainerList />
     </div>
   )
 }

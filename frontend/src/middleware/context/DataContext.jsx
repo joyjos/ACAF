@@ -16,7 +16,7 @@ export const DataProvider = ({ children }) => {
       setMember(memberData);
       console.log(memberData);
     } catch (error) {
-      console.error("Error fetching posts:", error);
+      console.error("Error fetching member:", error);
     }
   };
 

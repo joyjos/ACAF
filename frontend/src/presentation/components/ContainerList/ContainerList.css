@@ -3,11 +3,12 @@
     height: 3rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap:150px;
+    gap: 50%;
     text-align: center;
     justify-content: space-around;
-    border: 2px red solid;
-    font-size:3rem;
+}
 
+.titlePartner h1 {
+    flex: 1;
+    font-size: 2vw;
 }

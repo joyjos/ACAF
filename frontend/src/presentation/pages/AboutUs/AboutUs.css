@@ -1,19 +1,23 @@
-.aboutContainer{
- display:flex;
- flex-direction: column;
- gap:2rem;
- align-items: flex-start; 
- padding:3rem;
- margin :5rem;
- margin-top:6rem;
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+  margin: 10rem 10rem auto 10rem;
 }
 
-.titleAbout{
-font-size:4rem;
-display:flex;
-align-items: flex-start;
+.titleAbout {
+  font-size: 4rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .contentAbout {
-font-size:1.8rem;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
 }

@@ -5,9 +5,9 @@
 
 .sliderTitle {
   position: absolute;
-  font-size: 8rem;
+  font-size: 4.5vw;
   top: 33rem;
-  left: 28vw;
+  left: 27vw;
   z-index: 62;
   text-align: center;
   color: rgba(34, 34, 34, 0.9);

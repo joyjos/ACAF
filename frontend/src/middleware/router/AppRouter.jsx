@@ -3,7 +3,6 @@ import Home from "../../presentation/pages/Home/Home";
 import AboutUs from "../../presentation/pages/AboutUs/AboutUs";
 import Events from "../../presentation/pages/Events/Events";
 import AdminRouter from "./AdminRouter";
-
 import PartnersList from "../../presentation/pages/PartnersList/PartnersList";
 
 const AppRouter = () => {

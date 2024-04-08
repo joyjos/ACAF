@@ -38,7 +38,7 @@ export default function HeaderHome() {
           <p>Actividades</p>
           <p>Noticias</p>
           <p>Multimedia</p>
-          <Link to="/partners">
+          <Link to="/partners"></Link>
           <p>Hazte socio</p>
           <Link to="/login">
             <img

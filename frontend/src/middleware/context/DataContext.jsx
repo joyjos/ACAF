@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { createContext, useContext, useState } from "react";
-import { AdminService } from "../../services/AdminService";
+import AdminService from "../../services/AdminService";
 
 const DataContext = createContext();
 

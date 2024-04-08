@@ -1,3 +1,4 @@
+import Member from "../Member/Member";
 import "./ContainerList.css"
 
 
@@ -10,7 +11,9 @@ function ContainerList() {
         <h1>Categoria</h1>
         <h1>Aportación</h1>
     </section>
+    <Member />
     </div>
+    
 
   )
 }

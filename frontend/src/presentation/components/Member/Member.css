@@ -1,0 +1,16 @@
+
+    .member {
+        width: 50rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        gap: 50%;
+        text-align: center;
+        justify-content: space-around;
+        background-color: #6BC8E6;
+    }
+    
+    .member p  {
+        flex: 1;
+        font-size: 2vw;
+    }

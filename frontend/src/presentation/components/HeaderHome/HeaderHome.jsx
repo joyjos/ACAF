@@ -40,12 +40,13 @@ export default function HeaderHome() {
           <p>Multimedia</p>
           <Link to="/partners">
           <p>Hazte socio</p>
+          <Link to="/login">
+            <img
+              className="headerHomeIcon"
+              src="../../../../src/presentation/assets/userLogo.svg"
+              alt="User"
+            />
           </Link>
-          <img
-            className="headerHomeIcon"
-            src="../../../../src/presentation/assets/userLogo.svg"
-            alt="User"
-          />
         </section>
       </div>
     </div>

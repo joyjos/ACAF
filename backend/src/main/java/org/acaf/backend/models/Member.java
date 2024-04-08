@@ -24,7 +24,6 @@ public class Member {
 
     private int id;
     private String name;
-    private String contact;
     private int cuantity;
     private String category;
 }

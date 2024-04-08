@@ -6,10 +6,10 @@ function ContainerList() {
   return (
     <div>
     <section className="titlePartner">
-        <h1>Id</h1>
-        <h1>Nombre</h1>
-        <h1>Categoria</h1>
-        <h1>Aportación</h1>
+        <h2>Id</h2>
+        <h2>Nombre</h2>
+        <h2>Categoria</h2>
+        <h2>Aportación</h2>
     </section>
     <Member />
     </div>

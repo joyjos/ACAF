@@ -6,7 +6,7 @@ function Member() {
     <p>1</p>
     <p>name Restorant</p>
     <p>Category</p>
-    <p><strong>50€</strong></p>
+    <p className="bold">50€</p>
 
     </div>
   )

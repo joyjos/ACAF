@@ -1,8 +1,7 @@
 import './Searcher.css';
 import SearchIcon from '@mui/icons-material/Search';
-
-
 import PersonIcon from '@mui/icons-material/Person';
+
 const Searcher = () => {
 
   return (
@@ -16,6 +15,7 @@ const Searcher = () => {
           type="search"
           className="userSearchContainer__Field-Input"
           placeholder=" Buscar socio por nombre, apellido, nº de socio"
+          
         />
         <button className="userSearchContainer__Field-Button">
         <SearchIcon style={{ color: '#6BC8E6', fontSize: 30 }} />

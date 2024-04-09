@@ -12,6 +12,15 @@ class AdminService  {
       throw error;
     }
   }
+  async viewMembers() {
+    try {
+      const response = await axios.get(`${API_URL}`);
+      return response.data;
+    } catch (error) {
+      console.error("No se pueden cargar la lista de socios", error.response);
+      throw error;
+    }
+  }
 }
 
 export default AdminService;

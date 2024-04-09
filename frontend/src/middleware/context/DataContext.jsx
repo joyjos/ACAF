@@ -6,6 +6,7 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [member, setMember] = useState("");
+  const [memberList, setMemberList] = useState("");
   const adminService = new AdminService();
   const API_URL = "http://localhost:8080/api/members";
 
@@ -18,11 +19,22 @@ export const DataProvider = ({ children }) => {
       console.error("Error fetching member:", error);
     }
   };
+  const viewMembers = async () => {
+    try {
+      const memberList = await adminService.viewMembers();
+      setMemberList(memberList);
+      console.log(memberList);
+    } catch (error) {
+      console.error("Error fetching member:", error);
+    }
+  };
 
   const value = {
     postMember,
     member,
-    API_URL
+    API_URL,
+    viewMembers,
+    memberList
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

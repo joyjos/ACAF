@@ -5,7 +5,7 @@ import "./AboutUs.css";
 
 export default function AboutUs() {
   return (
-    <>
+    <div className="pagesDisplay">
       <Header />
       <section className="aboutContainer">
         <h1 className="titleAbout">Quiénes somos</h1>
@@ -25,6 +25,6 @@ export default function AboutUs() {
         </section>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

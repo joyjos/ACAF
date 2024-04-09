@@ -4,10 +4,10 @@ import Footer from "../../components/Footer/Footer";
 
 export default function Events() {
   return (
-    <>
+    <div className="pagesDisplay">
       <Header />
       <InfoEvents />
       <Footer />
-    </>
+    </div>
   );
 }

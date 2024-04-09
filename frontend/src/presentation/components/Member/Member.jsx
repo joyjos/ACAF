@@ -2,10 +2,10 @@ import "./Member.css";
 import { useDataContext } from '../../../middleware/context/DataContext';
 
 function Member() {
-  const { viewMembers } = useDataContext();
+  const { memberList } = useDataContext();
   return (
     <div className="member">
-      {viewMembers.map((member) => (
+      {memberList.map((member) => (
         <div key={member.id}>
           <p>{member.id}</p>
           <p>{member.name}</p>

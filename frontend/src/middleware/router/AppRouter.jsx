@@ -3,6 +3,7 @@ import Home from "../../presentation/pages/Home/Home";
 import AboutUs from "../../presentation/pages/AboutUs/AboutUs";
 import Events from "../../presentation/pages/Events/Events";
 import AdminRouter from "./AdminRouter";
+import { DataProvider } from "../context/DataContext";
 import PartnersList from "../../presentation/pages/PartnersList/PartnersList";
 
 const AppRouter = () => {
@@ -12,7 +13,6 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/partners" element={<PartnersList />} />
       </Routes>
       <AdminRouter/>
     </BrowserRouter>

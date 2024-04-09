@@ -6,44 +6,57 @@ import "./AddMemberForm.css";
 export default function AddMemberForm() {
   const { postMember } = useDataContext();
 
-  const [newMember, setNewMember] = useState({
+  const initialFormData = {
     name: "",
     cuantity: "",
     category: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setNewMember((newMember) => ({
-      ...newMember,
-      [name]: value,
-    }));
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
-   
-  const handleMember = () => {
-    postMember();
-    setNewMember({name: "", cuantity: "", category: ""})
-  }
 
+  const handleMember = (e) => {
+    e.preventDefault();
+    postMember(formData);
+    setFormData(initialFormData);
+  };
 
   return (
     <>
       <main className="formContainerAdmin">
         <h1>AÑADE UN SOCIO</h1>
-        <form >
+        <form>
           <label htmlFor="name">NOMBRE</label>
-          <input type="text" name="name"  value={newMember.name} placeholder="Ejemplo: Lucas Perez" onChange={handleChange} />
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            placeholder="Ejemplo: Lucas Perez"
+            onChange={handleChange}
+          />
           <label htmlFor="cuantity">APORTACIÓN</label>
-          <input type="text" name="cuantity" value={newMember.cuantity} placeholder="Ejemplo: 100 euros" onChange={handleChange}/>
+          <input
+            type="text"
+            name="cuantity"
+            value={formData.cuantity}
+            placeholder="Ejemplo: 100 euros"
+            onChange={handleChange}
+          />
           <label htmlFor="category">CATEGORÍA</label>
           <input
             type="text"
             name="category"
-            value={newMember.category}
+            value={formData.category}
             placeholder="Ejemplo: restaurante"
             onChange={handleChange}
           />
-        </form >
+        </form>
         <SaveMemberButton handleMember={handleMember} />
       </main>
     </>

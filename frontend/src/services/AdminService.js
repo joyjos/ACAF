@@ -8,7 +8,7 @@ class AdminService  {
       const response = await axios.post(`${API_URL}`, formData);
       return response.data;
     } catch (error) {
-      console.error("Error creando miembro", error.response.data);
+      console.error("Error creando miembro", error.response);
       throw error;
     }
   }

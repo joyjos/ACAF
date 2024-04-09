@@ -6,13 +6,12 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [member, setMember] = useState("");
-  //   const [needsReload, setNeedsReload] = useState(true);
   const adminService = new AdminService();
   const API_URL = "http://localhost:8080/api/members";
 
-  const postMember = async () => {
+  const postMember = async (formData) => {
     try {
-      const memberData = await adminService.createMember();
+      const memberData = await adminService.createMember(formData);
       setMember(memberData);
       console.log(memberData);
     } catch (error) {

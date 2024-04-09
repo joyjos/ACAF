@@ -6,11 +6,13 @@ import "./AddMemberForm.css";
 export default function AddMemberForm() {
   const { postMember } = useDataContext();
 
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     cuantity: "",
     category: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
     setFormData({
@@ -22,6 +24,7 @@ export default function AddMemberForm() {
   const handleMember = (e) => {
     e.preventDefault();
     postMember(formData);
+    setFormData(initialFormData);
   };
 
   return (

@@ -8,14 +8,17 @@ import PartnersList from "../../presentation/pages/PartnersList/PartnersList";
 
 const AppRouter = () => {
   return (
+    <DataProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/partners" element={<PartnersList />} />
       </Routes>
       <AdminRouter/>
     </BrowserRouter>
+    </DataProvider>
   );
 };
 

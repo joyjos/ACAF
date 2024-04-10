@@ -7,7 +7,6 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [member, setMember] = useState("");
   const [memberList, setMemberList] = useState([]);
-  // const [needReload, setNeedReload] = useState(true);
   const adminService = new AdminService();
   const API_URL = "http://localhost:8080/api/members";
 

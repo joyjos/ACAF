@@ -20,29 +20,25 @@ export const DataProvider = ({ children }) => {
       console.error("Error fetching member:", error);
     }
   };
-  const viewMembers = async () => {
-    try {
-      const memberList = await adminService.viewMembers();
-      setMemberList(memberList);
-      console.log(memberList);
-    } catch (error) {
-      console.error("Error fetching member:", error);
-    }
-  };
 
-  // useEffect(() => {
-  //   if (needReload) {
-  //     adminService.viewMembers;
-  //   }
-  // }, [needReload]);
+  useEffect(() => {
+    const viewMembers = async () => {
+      try {
+        const memberList = await adminService.viewMembers();
+        setMemberList(memberList);
+        console.log(memberList);
+      } catch (error) {
+        console.error("Error fetching member:", error);
+      }
+    };
+    viewMembers();
+  }, []);
 
   const value = {
     postMember,
     member,
     API_URL,
-    viewMembers,
     memberList,
-   
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

@@ -3,6 +3,8 @@ import { useDataContext } from '../../../middleware/context/DataContext';
 
 function Member() {
   const { memberList } = useDataContext();
+
+  console.log(memberList)
   return (
     <div className="member">
       {memberList.map((member) => (

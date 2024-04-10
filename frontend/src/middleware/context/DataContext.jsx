@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import AdminService from "../../services/AdminService";
 
 const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [member, setMember] = useState("");
-  const [memberList, setMemberList] = useState("");
+  const [memberList, setMemberList] = useState([]);
+  // const [needReload, setNeedReload] = useState(true);
   const adminService = new AdminService();
   const API_URL = "http://localhost:8080/api/members";
 
@@ -29,12 +30,19 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  // useEffect(() => {
+  //   if (needReload) {
+  //     adminService.viewMembers;
+  //   }
+  // }, [needReload]);
+
   const value = {
     postMember,
     member,
     API_URL,
     viewMembers,
-    memberList
+    memberList,
+   
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

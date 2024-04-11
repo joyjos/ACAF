@@ -1,9 +1,9 @@
 .titlePartner {
-  width: 75vw;
+  width: 73vw;
   height: 3rem;
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .titlePartner h2 {
@@ -11,6 +11,12 @@
   font-size: 3rem;
   display: flex;
   justify-content: center;
+}
+
+.memberMapContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 
@@ -21,10 +27,9 @@
 }
 
 .member {
-  width: 75vw;
+  width: 70vw;
   display: flex;
   background-color: #6bc8e6;
-  margin-top: 2rem;
   border-radius: 10px;
 }
 
@@ -38,3 +43,4 @@
 .bold {
   font-weight: bold;
 }
+

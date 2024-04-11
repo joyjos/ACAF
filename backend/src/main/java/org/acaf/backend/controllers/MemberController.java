@@ -36,7 +36,7 @@ public class MemberController {
     @PatchMapping("/{id}")
     public ResponseEntity<Member> updateMember(@PathVariable Integer id, @RequestBody Member member) {
 
-        Member member2 = memberService.updatedMember(id, member);
+        Member member2 = memberService.updateMember(id, member);
         return new ResponseEntity<>(member2, HttpStatus.OK);
     }
 }

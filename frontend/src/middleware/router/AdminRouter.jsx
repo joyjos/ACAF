@@ -6,7 +6,7 @@ export default function AdminRouter() {
   return (
     <Routes>
       {/* <Route path="/" element={<Home/>}/> */}
-      <Route path="/login" element={<AddMember/>}/>
+      <Route path="" element={<AddMember />}/>
     </Routes>
   );
 }

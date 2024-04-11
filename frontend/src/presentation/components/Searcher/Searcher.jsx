@@ -12,7 +12,9 @@ const Searcher = ({ memberList, setFilteredMembers }) => {
     const filteredMembers = memberList.filter(
       (member) =>
         member.name.toLowerCase().includes(query.toLowerCase()) ||
-        member.category.toLowerCase().includes(query.toLowerCase())
+        member.category.toLowerCase().includes(query.toLowerCase())|| 
+        member.id.toString().includes(query)
+
     );
     setFilteredMembers(filteredMembers);
   };

@@ -20,4 +20,17 @@ public class MemberService {
     public List<Member> findAll() {
         return memberRepository.findAll();
     }
+
+    public Member updatedMember(Integer id, Member updatedMember) {
+
+        String name = updatedMember.getName();
+        String category = updatedMember.getCategory();
+        Integer cuantity = updatedMember.getCuantity();
+        if (updatedMember == null || name == null || category == null || cuantity == null) {
+            throw new IllegalArgumentException("Los datos del miembro actualizado son inválidos");
+        }
+
+        return memberRepository.save(updatedMember);
+
+    }
 }

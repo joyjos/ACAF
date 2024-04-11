@@ -34,9 +34,7 @@ export default function Slider() {
         </SwiperSlide>
       </Swiper>
       <h1 className="sliderTitle">
-        ASOCIACIÓN <br />
-        CULTURAL ARENESCA
-        <br /> DE FESTEJOS
+        ASOCIACIÓN <br /> CULTURAL ARENESCA <br /> DE FESTEJOS
       </h1>
     </div>
   );

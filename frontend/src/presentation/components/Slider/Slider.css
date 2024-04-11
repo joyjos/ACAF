@@ -5,12 +5,13 @@
 
 .sliderTitle {
   position: absolute;
-  font-size: 4.5vw;
-  top: 33rem;
-  left: 27vw;
-  z-index: 62;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
   text-align: center;
   color: rgba(34, 34, 34, 0.9);
+  z-index: 62;
 }
 
 .swiper-button-prev,

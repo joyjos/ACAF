@@ -2,8 +2,12 @@ import "./Member.css";
 import PropTypes from "prop-types";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
+import { useDataContext } from "../../../middleware/context/DataContext";
 
 function Member({ memberList }) {
+
+  const { deleteMember } = useDataContext();
+
   return (
     <div className="memberContainer">
       <section className="titlePartner">
@@ -27,6 +31,7 @@ function Member({ memberList }) {
               <EditOutlinedIcon style={{ fontSize: 30, cursor: "pointer" }} />
               <DeleteForeverOutlinedIcon
                 style={{ fontSize: 30, cursor: "pointer" }}
+                onClick={() => deleteMember(member.id)}
               />
             </div>
           </div>

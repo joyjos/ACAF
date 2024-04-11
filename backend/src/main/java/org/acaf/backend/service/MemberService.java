@@ -30,7 +30,7 @@ public class MemberService {
         String category = updatedMember.getCategory();
         Integer cuantity = updatedMember.getCuantity();
         if (updatedMember == null || name == null || category == null || cuantity == null) {
-            throw new IllegalArgumentException("Los datos del equipo actualizado son inválidos");
+            throw new IllegalArgumentException("Los datos del miembro actualizado son inválidos");
         }
 
         Optional<Member> teamOptional = memberRepository.findById(id);
@@ -41,7 +41,12 @@ public class MemberService {
             existingMember.setCuantity(updatedMember.getCuantity());
             return memberRepository.save(existingMember);
         } else {
-            throw new NoResultException("No se encontró el equipo con el ID: " + id);
+            throw new NoResultException("No se encontró el miembro con el ID: " + id);
         }
     }
+
+    public void deleteMember(Integer id) {
+        memberRepository.deleteById(id);
+    }
+    
 }

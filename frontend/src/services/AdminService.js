@@ -21,6 +21,15 @@ class AdminService  {
       throw error;
     }
   }
+  async deleteMember(id) {
+    try {
+      const response = await axios.delete(`${API_URL}/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error("No se pueden eliminar el socio", error.response);
+      throw error;
+    }
+  }
 }
 
 export default AdminService;

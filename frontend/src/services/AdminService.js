@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_URL = "http://localhost:8080/api/members";
 
-class AdminService  {
+class AdminService {
   async createMember(formData) {
     try {
       const response = await axios.post(`${API_URL}`, formData);
@@ -30,6 +30,17 @@ class AdminService  {
       throw error;
     }
   }
+  async updateMember(updatedMemberData) {
+    try {
+      const response = await axios.put(`${API_URL}/${updatedMemberData.id}`, updatedMemberData);
+      return response.data;
+    } catch (error) {
+      console.error("Error al actualizar el socio", error.response);
+      throw error;
+    }
+  }
 }
+
+
 
 export default AdminService;

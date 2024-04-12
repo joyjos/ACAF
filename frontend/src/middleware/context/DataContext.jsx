@@ -53,6 +53,7 @@ export const DataProvider = ({ children }) => {
     API_URL,
     memberList,
     deleteMember,
+    setMemberList
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

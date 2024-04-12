@@ -3,6 +3,7 @@ import Searcher from "../../components/Searcher/Searcher";
 import AdminHeader from "../../adminComponents/header/AdminHeader";
 import Member from "../../components/Member/Member";
 import { useDataContext } from "../../../middleware/context/DataContext";
+import "./PartnersList.css"
 
 const PartnersList = () => {
   const { memberList } = useDataContext();

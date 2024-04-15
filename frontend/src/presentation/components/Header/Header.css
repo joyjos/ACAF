@@ -6,6 +6,10 @@
   z-index: 80;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2.5rem;
+ 
   background-color: #f3d743;
+}
+
+.headerContainer img {
+  width: 10rem;
 }

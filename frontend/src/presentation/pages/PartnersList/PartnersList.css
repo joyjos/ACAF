@@ -1,0 +1,11 @@
+.containerPartnerList {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.containerPartnerList h1 {
+  font-size: 5rem;
+  margin-top: 4rem;
+  margin-left: 20rem;
+}

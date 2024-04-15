@@ -10,3 +10,7 @@
   color: #575757;
   font-weight: bold;
 }
+
+.headerAdmin img {
+  cursor: pointer;
+}

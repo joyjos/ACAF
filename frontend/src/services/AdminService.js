@@ -38,8 +38,7 @@ class AdminService {
       console.error("Error al actualizar el socio", error.response);
       throw error;
     }
-  }
-}
+  }}
 
 
 

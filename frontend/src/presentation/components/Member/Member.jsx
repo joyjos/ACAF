@@ -16,8 +16,6 @@
 //   };
 //   const { deleteMember } = useDataContext();
 
-
-  
 //   const handleChange = (e) => {
 //     const { name, value } = e.target;
 //     setEditedMemberData((prevData) => ({
@@ -119,10 +117,10 @@ function Member({ memberList }) {
     }));
   };
 
-
   const handleSave = async () => {
     try {
-      await adminService.updateMember(editedMemberData); // Llama a updateMember desde la instancia de AdminService
+      await adminService.updateMember(editedMemberData);
+      window.location.reload();
       setEditingMemberId(null);
       setEditedMemberData({});
     } catch (error) {
@@ -151,19 +149,19 @@ function Member({ memberList }) {
                   <input
                     type="text"
                     name="name"
-                    value={member.name}
+                    value={editedMemberData.name}
                     onChange={handleChange}
                   />
                   <input
                     type="text"
                     name="category"
-                    value={member.category}
+                    value={editedMemberData.category}
                     onChange={handleChange}
                   />
                   <input
                     type="number"
                     name="cuantity"
-                    value={member.cuantity}
+                    value={editedMemberData.cuantity}
                     onChange={handleChange}
                   />
                 </>
@@ -177,7 +175,9 @@ function Member({ memberList }) {
             </div>
             <div>
               {editingMemberId === member.id ? (
-                <button onClick={handleSave}>Guardar</button>
+                <button onClick={handleSave} className="memberUpdateBtn">
+                  Guardar
+                </button>
               ) : (
                 <EditOutlinedIcon
                   style={{ fontSize: 30, cursor: "pointer" }}
@@ -208,4 +208,3 @@ Member.propTypes = {
 };
 
 export default Member;
-

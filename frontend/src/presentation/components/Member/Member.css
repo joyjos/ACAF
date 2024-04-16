@@ -33,7 +33,7 @@
   border-radius: 10px;
 }
 
-.member p {
+.member p, .member input {
   flex: 1;
   font-size: 2.5rem;
   display: flex;
@@ -44,3 +44,6 @@
   font-weight: bold;
 }
 
+.memberUpdateBtn {
+  font-size: 8rem;
+}

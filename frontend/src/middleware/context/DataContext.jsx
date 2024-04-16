@@ -7,6 +7,7 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [member, setMember] = useState("");
   const [memberList, setMemberList] = useState([]);
+  const { updateMemberState, setUpdateMemberState } = useState([]);
   const adminService = new AdminService();
   const API_URL = "http://localhost:8080/api/members";
   const [reload, setReload] = useState(true);
@@ -47,13 +48,26 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  
+  const updateMember = async (id) => {
+    try {
+      const updatedMember = await adminService.updateMember(id);
+      console.log(updatedMember); 
+    } catch (error) {
+      console.error("Error al actualizar el socio", error);
+      // Manejar el error de alguna manera
+    }
+  };
+
   const value = {
     postMember,
     member,
     API_URL,
     memberList,
     deleteMember,
-    setMemberList
+    setMemberList,
+    updateMember,
+    updateMemberState
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

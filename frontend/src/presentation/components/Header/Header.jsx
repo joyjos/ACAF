@@ -16,7 +16,9 @@ export default function Header() {
         <Link to="/events">
           <p>Fiestas</p>
         </Link>
+        <Link to="/activities">
         <p>Actividades</p>
+        </Link>
         <p>Noticias</p>
         <p>Multimedia</p>
         <p>Hazte socio</p>

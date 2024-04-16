@@ -7,6 +7,7 @@ import { DataProvider } from "../context/DataContext";
 import PartnersList from "../../presentation/pages/PartnersList/PartnersList";
 import { Login } from "../../presentation/adminComponents/login/Login";
 import Activities from "../../presentation/pages/Activities/Activities";
+import News from "../../presentation/pages/News/News";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,8 @@ const AppRouter = () => {
         <Route path="homeAdmin/partners" element={<PartnersList />} />
         <Route path="/login" element={<Login />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/news" element={<News />} />
+
       </Routes>
       <AdminRouter/>
     </BrowserRouter>

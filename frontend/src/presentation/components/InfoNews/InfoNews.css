@@ -1,0 +1,34 @@
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.titleNews {
+  font-size: 3rem;
+  margin: 5rem auto 2rem auto;
+}
+
+.newsTitle {
+  font-size: 3rem;
+  margin: 5rem auto 2rem auto;
+}
+
+.newsCard {
+  width: 90%;
+  margin: 2rem;
+  padding: 2rem;
+  border-bottom: 0.2rem solid #f3d743; 
+  border-radius: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.newsCard:last-child {
+  border-bottom: none;
+}

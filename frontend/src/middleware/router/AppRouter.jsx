@@ -18,7 +18,7 @@ const AppRouter = () => {
         <Route path="/events" element={<Events />} />
         <Route path="homeAdmin/partners" element={<PartnersList />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/activites" element={<Activities />} />
+        <Route path="/activities" element={<Activities />} />
       </Routes>
       <AdminRouter/>
     </BrowserRouter>

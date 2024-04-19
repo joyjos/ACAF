@@ -6,15 +6,27 @@
   margin: 10rem 10rem auto 10rem;
 }
 
+.aboutContainer img {
+  width: 50rem;
+  border-radius: 1rem;
+}
+
+.aboutContainer div {
+  display: flex;
+  gap: 3rem;
+}
+
 .titleAbout {
   font-size: 4rem;
   display: flex;
   align-items: flex-start;
 }
 
-.contentAbout {
+
+.contentAbout p{
   font-size: 1.8rem;
   text-align: justify;
+  margin: 2rem 0;
 }
 
 .mapContainer {

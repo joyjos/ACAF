@@ -35,15 +35,11 @@ export default function HeaderHome() {
           <Link to="/events">
             <p>Fiestas</p>
           </Link>
-          <Link to="/activities">
-          <p>Actividades</p>
-          </Link>
           <Link to="/news">
             <p>Noticias</p>
           </Link>
           <p>Noticias</p>
           <p>Multimedia</p>
-          <p>Hazte socio</p>
           <Link to="/login">
             <img
               className="headerHomeIcon"

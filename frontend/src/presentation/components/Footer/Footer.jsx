@@ -8,12 +8,18 @@ export default function Footer() {
     <footer>
       <section className="footerOptions">
         <section className="linkContainer">
-          <p>Quiénes somos</p>
-          <p>Fiestas</p>
-          <p>Actividades</p>
-          <p>Noticias</p>
-          <p>Multimedia</p>
-          <p>Hazte socio</p>
+          <Link to="/aboutus">
+            <p>Quiénes somos</p>
+          </Link>
+          <Link to="/events">
+            <p>Fiestas</p>
+          </Link>
+          <Link to="/news">
+            <p>Noticias</p>
+          </Link>
+          <Link>
+            <p>Multimedia</p>
+          </Link>
         </section>
         <section className="derContainer">
           <p>
@@ -24,7 +30,10 @@ export default function Footer() {
         </section>
       </section>
       <section className="socialNetworks">
-        <Link target="_blank" to="https://www.facebook.com/ASOCIACIONCULTURALARENESCADEFESTEJOS">
+        <Link
+          target="_blank"
+          to="https://www.facebook.com/ASOCIACIONCULTURALARENESCADEFESTEJOS"
+        >
           <img src={logoFacebook} className="logoFacebook"></img>
         </Link>
         <Link target="_blank" to="https://www.instagram.com/acaf_larena">

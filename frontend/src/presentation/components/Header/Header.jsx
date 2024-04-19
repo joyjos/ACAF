@@ -16,14 +16,10 @@ export default function Header() {
         <Link to="/events">
           <p>Fiestas</p>
         </Link>
-        <Link to="/activities">
-        <p>Actividades</p>
-        </Link>
         <Link to="/news">
         <p>Noticias</p>
         </Link>
         <p>Multimedia</p>
-        <p>Hazte socio</p>
       </section>
     </div>
   );

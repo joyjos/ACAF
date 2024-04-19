@@ -28,9 +28,15 @@ footer {
 
 .linkContainer {
     display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     margin-bottom: 3rem;
+    margin-left: 2vw;
+}
+
+.linkContainer a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #000;
 }
 
 .linkContainer p {
@@ -49,6 +55,11 @@ footer {
     justify-content: flex-end;
     gap: 1rem;
 }
+
+.derContainer {
+    margin-left: 2vw;
+}
+
 
 .derContainer strong {
      font-size: 1.5rem;

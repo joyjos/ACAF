@@ -22,6 +22,7 @@ export default function Footer() {
           </Link>
         </section>
         <section className="derContainer">
+        <Link to="mailto:asociacionculturalarenesca@gmail.com?subject=Asunto del correo">asociacionculturalarenesca@gmail.com</Link>
           <p>
             {" "}
             © 2024 ACAF. Todos los derechos reservados.{" "}

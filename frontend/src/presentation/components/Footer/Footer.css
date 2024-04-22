@@ -1,73 +1,81 @@
 footer {
-   position:relative;
-   width:100%;
-    background-color: #F3D743;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index:10;
+  position: relative;
+  width: 100%;
+  background-color: #f3d743;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 }
 
 .footerContainer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
 }
 
 .footerOptions {
-    font-size: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap:1.5rem;
-    margin:0;
-    text-align: center;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  text-align: center;
 }
 
 .linkContainer {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 2vw;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 2vw;
 }
 
 .linkContainer a {
-    text-decoration: none;
-    font-size: 1.5vw;
-    color: #000;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #000;
 }
 
 .linkContainer p {
-    flex-basis: calc(25% - 2rem);
-    margin: 0;
-
+  flex-basis: calc(25% - 2rem);
+  margin: 0;
 }
 
 .footerLogo {
-    width: 20rem;
+  width: 20rem;
 }
 
 .socialNetworks {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 .derContainer {
-    margin-left: 2vw;
+  margin-left: 2vw;
 }
-
 
 .derContainer strong {
-     font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .logoFacebook {
-    width: 30px;
+  width: 30px;
 }
 
 .logoInstagram {
-    width: 30px;
+  width: 30px;
+}
+
+.derContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.contactFooter {
+  color: black;
 }

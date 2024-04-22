@@ -23,7 +23,7 @@ export default function AboutUs() {
           <p>
             Motivados por un sueño común y un compromiso inquebrantable con
             nuestro pueblo, decidimos dar un paso al frente. Irene, Aitor,
-            Lucía, Diego, Nicolás, Salma, Natalia, Sergio y yo, Oriol,
+            Lucía, Diego, Nicolás, Salma, Natalia, Sergio y Oriol,
             conformamos este equipo entusiasta y decidido a dar un nuevo impulso
             a las celebraciones que tanto significado tienen para todos
             nosotros.

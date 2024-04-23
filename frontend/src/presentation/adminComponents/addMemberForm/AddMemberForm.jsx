@@ -67,6 +67,7 @@ export default function AddMemberForm() {
             value={formData.name}
             placeholder="Ejemplo: Lucas Perez"
             onChange={handleChange}
+            required
           />
           <label htmlFor="cuantity">APORTACIÓN</label>
           <input
@@ -75,6 +76,7 @@ export default function AddMemberForm() {
             value={formData.cuantity}
             placeholder="Ejemplo: 100 euros"
             onChange={handleChange}
+            required
           />
           <label htmlFor="category">CATEGORÍA</label>
           <input
@@ -83,6 +85,7 @@ export default function AddMemberForm() {
             value={formData.category}
             placeholder="Ejemplo: restaurante"
             onChange={handleChange}
+            required
           />
         </form>
         <SaveMemberButton

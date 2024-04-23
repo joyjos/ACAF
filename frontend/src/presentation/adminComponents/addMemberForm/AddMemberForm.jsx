@@ -53,7 +53,7 @@ export default function AddMemberForm() {
           variant="filled"
           sx={{ width: "100%" }}
         >
-         El miembro se ha añadido correctamente!
+         El socio se ha añadido correctamente!
         </Alert>
       </Snackbar>
 

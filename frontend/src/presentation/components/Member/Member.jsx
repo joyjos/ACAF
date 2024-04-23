@@ -41,10 +41,10 @@ function Member({ members }) {
     }
   };
 
-  const handleDeleteMember = async (id) => {
+  const handleDeleteMember = async (id, name) => {
     Swal.fire({
       title: "¿Estás seguro de que deseas eliminar este socio/a?",
-      html: '<span>'+ memberList.name +'</span>',
+      html: '<span>'+ name +'</span>',
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#d33",
@@ -122,7 +122,7 @@ function Member({ members }) {
               )}
               <DeleteForeverOutlinedIcon
                 style={{ fontSize: 30, cursor: "pointer" }}
-                onClick={() => handleDeleteMember(member.id)}
+                onClick={() => handleDeleteMember(member.id, member.name)}
               />
             </div>
           </div>

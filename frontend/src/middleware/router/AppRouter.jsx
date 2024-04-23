@@ -8,6 +8,7 @@ import PartnersList from "../../presentation/pages/PartnersList/PartnersList";
 import { Login } from "../../presentation/adminComponents/login/Login";
 import Activities from "../../presentation/pages/Activities/Activities";
 import News from "../../presentation/pages/News/News";
+import MultimediaPage from "../../presentation/pages/multimedia/MultimediaPage";
 
 const AppRouter = () => {
   return (
@@ -21,7 +22,7 @@ const AppRouter = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/news" element={<News />} />
-
+        <Route path="/multimedia" element={<MultimediaPage/>} />
       </Routes>
       <AdminRouter/>
     </BrowserRouter>

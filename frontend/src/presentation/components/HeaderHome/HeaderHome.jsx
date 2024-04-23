@@ -39,7 +39,9 @@ export default function HeaderHome() {
             <p>Noticias</p>
           </Link>
           <p>Noticias</p>
+          <Link to="/multimedia">
           <p>Multimedia</p>
+          </Link>
           <Link to="/login">
             <img
               className="headerHomeIcon"

@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import acaf from "../../assets/ACAF.svg"
+import acaf from "../../assets/ACAF.svg";
 import "./Header.css";
 
 export default function Header() {
-
   return (
     <div className="headerContainer">
       <Link to="/">
@@ -17,9 +16,11 @@ export default function Header() {
           <p>Fiestas</p>
         </Link>
         <Link to="/news">
-        <p>Noticias</p>
+          <p>Noticias</p>
         </Link>
-        <p>Multimedia</p>
+        <Link to="/multimedia">
+          <p>Multimedia</p>
+        </Link>
       </section>
     </div>
   );

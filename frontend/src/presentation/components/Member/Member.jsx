@@ -6,9 +6,10 @@ import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
 import { useDataContext } from "../../../middleware/context/DataContext";
 import AdminService from "../../../services/AdminService";
+import Swal from 'sweetalert2';
 
-function Member({ memberList }) {
-  const { deleteMember } = useDataContext();
+function Member({ members }) {
+  const { deleteMember, memberList } = useDataContext();
   const [editingMemberId, setEditingMemberId] = useState(null);
   const [editedMemberData, setEditedMemberData] = useState({});
   const adminService = new AdminService();
@@ -40,6 +41,29 @@ function Member({ memberList }) {
     }
   };
 
+  const handleDeleteMember = async (id) => {
+    Swal.fire({
+      title: "¿Estás seguro de que deseas eliminar este socio/a?",
+      html: '<span>'+ memberList.name +'</span>',
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Sí, eliminar",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteMember(id);
+        Swal.fire(
+          "Eliminado/a",
+          "El socio/a ha sido eliminado/a",
+          "success"
+        );
+      }
+    });
+  };
+  
+
   return (
     <div className="memberContainer">
       <section className="titlePartner">
@@ -51,7 +75,7 @@ function Member({ memberList }) {
         <DeleteForeverOutlinedIcon style={{ fontSize: 30, opacity: 0 }} />
       </section>
       <div>
-        {memberList.map((member) => (
+        {members.map((member) => (
           <div className="memberMapContainer" key={member.id}>
             <div className="member">
               <p>{member.id}</p>
@@ -98,7 +122,7 @@ function Member({ memberList }) {
               )}
               <DeleteForeverOutlinedIcon
                 style={{ fontSize: 30, cursor: "pointer" }}
-                onClick={() => deleteMember(member.id)}
+                onClick={() => handleDeleteMember(member.id)}
               />
             </div>
           </div>

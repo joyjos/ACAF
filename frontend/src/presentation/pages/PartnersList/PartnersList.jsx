@@ -36,7 +36,7 @@ const PartnersList = () => {
           handleInputChange={handleInputChange}
           searchQuery={searchQuery}
         />
-        <Member memberList={filteredMembers || memberList} />
+        <Member members={filteredMembers || memberList} />
       </div>
     </>
   );

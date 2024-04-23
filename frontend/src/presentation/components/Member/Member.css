@@ -51,9 +51,9 @@
   font-weight: bold;
 }
 
-div:where(.swal2-container) .swal2-html-container {
-  font-size: 3.3rem !important;
-  margin: 0 !important;
+div:where(.swal2-container) .swal2-html-container span {
+  font-size: 2.5rem !important;
+  margin: 2rem !important;
 }
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm, div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {

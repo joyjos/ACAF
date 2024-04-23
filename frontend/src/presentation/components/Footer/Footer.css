@@ -75,6 +75,9 @@ footer {
   flex-direction: column;
   gap: 4.5rem;
 }
+.derContainer a:hover{
+color: #575757;
+}
 
 .contactFooter {
   color: black;

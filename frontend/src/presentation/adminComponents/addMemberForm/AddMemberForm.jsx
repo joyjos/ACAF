@@ -70,7 +70,7 @@ export default function AddMemberForm() {
           />
           <label htmlFor="cuantity">APORTACIÓN</label>
           <input
-            type="text"
+            type="number"
             name="cuantity"
             value={formData.cuantity}
             placeholder="Ejemplo: 100 euros"

@@ -30,6 +30,10 @@ export default function AddMemberForm() {
 
   const handleMember = (e) => {
     e.preventDefault();
+    if (!formData.name || !formData.cuantity || !formData.category) {
+      alert("Por favor, rellena todos los campos");
+      return;
+    }
     postMember(formData);
     setFormData(initialFormData);
     handleClick();

@@ -8,6 +8,8 @@ export const DataProvider = ({ children }) => {
   const [member, setMember] = useState("");
   const [memberList, setMemberList] = useState([]);
   const { updateMemberState, setUpdateMemberState } = useState([]);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertSeverity, setAlertSeverity] = useState("");
   const adminService = new AdminService();
   const API_URL = "http://localhost:8080/api/members";
   const [reload, setReload] = useState(true);
@@ -16,6 +18,10 @@ export const DataProvider = ({ children }) => {
     try {
       const memberData = await adminService.createMember(formData);
       setMember(memberData);
+      setAlertMessage(
+        `Enhorabuena, el socio/a se ha registrado correctamente`
+      );
+      setAlertSeverity("success");
       console.log(memberData);
     } catch (error) {
       console.error("Error fetching member:", error);
@@ -48,11 +54,10 @@ export const DataProvider = ({ children }) => {
     }
   };
 
-  
   const updateMember = async (id) => {
     try {
       const updatedMember = await adminService.updateMember(id);
-      console.log(updatedMember); 
+      console.log(updatedMember);
     } catch (error) {
       console.error("Error al actualizar el socio", error);
       // Manejar el error de alguna manera
@@ -67,7 +72,9 @@ export const DataProvider = ({ children }) => {
     deleteMember,
     setMemberList,
     updateMember,
-    updateMemberState
+    updateMemberState,
+    alertSeverity,
+    alertMessage,
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

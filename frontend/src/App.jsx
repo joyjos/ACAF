@@ -4,7 +4,7 @@ import AppRouter from "./middleware/router/AppRouter";
 function App() {
   return (
     <>
-      <AppRouter />;
+      <AppRouter />
     </>
   );
 }

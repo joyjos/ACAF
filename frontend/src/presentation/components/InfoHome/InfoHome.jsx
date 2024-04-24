@@ -25,15 +25,15 @@ export default function InfoHome() {
       <h3 className="infoHomeActualityTitle">Actualidad</h3>
       <section className="infoHomeImages">
         <img
-          src="../../../../src/presentation/assets/imgActuality1.jpg"
+          src="../../../../src/presentation/assets/img/imgActuality1.jpg"
           alt=""
         />
         <img
-          src="../../../../src/presentation/assets/imgActuality2.jpg"
+          src="../../../../src/presentation/assets/img/imgActuality2.jpg"
           alt=""
         />
         <img
-          src="../../../../src/presentation/assets/imgActuality3.jpg"
+          src="../../../../src/presentation/assets/img/imgActuality3.jpg"
           alt=""
         />
       </section>

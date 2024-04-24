@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import PositionMap from "../../components/PositionMap/PositionMap";
-import nosotros from "../../assets/IMG_7853.jpg";
+import nosotros from "../../assets/img/IMG_7853.jpg";
 import "./AboutUs.css";
 
 export default function AboutUs() {

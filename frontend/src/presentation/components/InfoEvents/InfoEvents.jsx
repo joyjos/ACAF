@@ -29,7 +29,7 @@ export default function InfoEvents() {
         </p>
       </div>
       <img
-        src="../../../../src/presentation/assets/imgEvents.jpg"
+        src="../../../../src/presentation/assets/img/imgEvents.jpg"
         alt="Foto fiesta"
         className="imgEvents"
       />

@@ -4,17 +4,38 @@
   margin: 10rem 10rem auto 10rem;
 }
 
+.eventsContainter h3 {
+  font-size: 3rem;
+  color: #f5cf14;
+}
+
+.eventsContainter article {
+  display: flex;
+  justify-content: center;
+}
+
 .titleEvents {
-  font-size: 4rem;
+  font-size: 6rem;
+  color: #f5cf14;
 }
 
 .contentEvents {
   font-size: 1.8rem;
   text-align: justify;
   width: 90%;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
-.imgEvents {
-    width: 40rem;
+.containerImgs {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin: 7vh 0;
+}
+
+.containerImgs img {
+  width: 30vw;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  height: 50vh;
 }

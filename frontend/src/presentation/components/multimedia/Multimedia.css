@@ -6,9 +6,10 @@
   margin-top: 10rem;
 }
 
-.containerMultimedia p {
-  font-size: 3rem;
+.containerMultimedia h1 {
+  font-size: 6rem;
   margin: 3rem;
+  color: #f5cf14;
 }
 
 .containerMultimedia img {

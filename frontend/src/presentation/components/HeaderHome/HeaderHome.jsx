@@ -4,12 +4,17 @@ import { useEffect, useState } from "react";
 
 export default function HeaderHome() {
   const [isSticky, setIsSticky] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
       if (isScrolled !== isSticky) {
         setIsSticky(isScrolled);
+      }
+      // Si el menú móvil está abierto, ciérralo al desplazar
+      if (isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
       }
     };
 
@@ -18,7 +23,11 @@ export default function HeaderHome() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isSticky]);
+  }, [isSticky, isMobileMenuOpen]);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <div className="headerRelative">
@@ -28,7 +37,7 @@ export default function HeaderHome() {
         alt="Logo ACAF"
       />
       <div className={`headerHomeContainer ${isSticky ? "sticky" : ""}`}>
-        <section className="headerHomeOptions">
+        <section className={`headerHomeOptions ${isMobileMenuOpen ? "open" : ""}`}>
           <Link to="/aboutus">
             <p>Quiénes somos</p>
           </Link>
@@ -38,9 +47,8 @@ export default function HeaderHome() {
           <Link to="/news">
             <p>Noticias</p>
           </Link>
-          <p>Noticias</p>
           <Link to="/multimedia">
-          <p>Multimedia</p>
+            <p>Multimedia</p>
           </Link>
           <Link to="/login">
             <img
@@ -50,6 +58,11 @@ export default function HeaderHome() {
             />
           </Link>
         </section>
+        <div className="hamburgerButtonContainer">
+          <button className="hamburgerButton" onClick={toggleMobileMenu}>
+            ☰
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -4,13 +4,118 @@
   left: 0;
   width: 100%;
   z-index: 80;
+  transition: background-color 0.5s ease-in-out;
   display: flex;
   justify-content: space-between;
- 
-  background-color: #f3d743;
+  padding-bottom: 2.5rem;
 }
 
+.headerContainer {
+  background-color: #f3d743;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 .headerContainer img {
-  width: 10rem;
-  z-index:65;
+  width: 8vw;
+}
+
+.headerLogo {
+  width: 23rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    margin-top: -1.5vh;
+}
+
+.headerOptions {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 3rem auto auto;
+}
+
+.headerOptions p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 0.9);
+}
+
+
+.headerOptions p {
+  cursor: pointer;
+}
+
+.headerOptions.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  background-color: #f3d743;
+  justify-content: center;
+  z-index: 100;
+  padding: 4rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hamburgerButtonContainer {
+  display: flex;
+  position: fixed;
+  right: 0;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 0;
+  margin-top: 2.5vw;
+}
+
+
+.hamburgerButton {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.hamburgerButton {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburgerButton {
+    display: block;
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 90;
+    margin-right: 3rem;
+  }
+
+  .headerOptions {
+    display: none;
+    margin: 0rem 0rem auto auto;
+  }
+
+    .headerContainer img {
+      min-width: 16vw;
+    }
+  .headerLogo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    margin-top: -1.5vh;
+  }
+    .headerContainer {
+      height: 10vh;
+      background-color: #f3d743;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 65;
+    }
+  .headerOptions.open {
+    display: flex;
+    align-items: center;
+  }
 }

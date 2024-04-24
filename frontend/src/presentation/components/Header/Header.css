@@ -12,4 +12,5 @@
 
 .headerContainer img {
   width: 10rem;
+  z-index:65;
 }

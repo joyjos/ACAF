@@ -12,7 +12,6 @@ export default function HeaderHome() {
       if (isScrolled !== isSticky) {
         setIsSticky(isScrolled);
       }
-      // Si el menú móvil está abierto, ciérralo al desplazar
       if (isMobileMenuOpen) {
         setIsMobileMenuOpen(false);
       }

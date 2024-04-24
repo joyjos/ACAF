@@ -9,6 +9,7 @@
 .aboutContainer img {
   width: 50rem;
   border-radius: 1rem;
+  object-fit: cover;
 }
 
 .aboutContainer div {

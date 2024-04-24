@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import arrowBack from "../../assets/arrowBack.png";
+import arrowBack from "../../assets/img/arrowBack.png";
 import "./AdminHeader.css"
 
 export default function AdminHeader() {

@@ -1,5 +1,5 @@
 import "./Login.css";
-import headLogin from "../../assets/headLogin.jpg";
+import headLogin from "../../assets/img/headLogin.jpg";
 import { Link } from "react-router-dom";
 
 export const Login = () => {

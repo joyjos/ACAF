@@ -31,7 +31,7 @@ export default function Multimedia() {
 
   return (
     <main className="containerMultimedia">
-      <p>Multimedia</p>
+      <h1>Multimedia</h1>
       <div>
         {multimediaImg.map((imagen, index) => (
           <article key={index} className="containerImage">

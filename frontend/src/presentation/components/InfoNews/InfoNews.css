@@ -3,25 +3,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 18vh 0;
 }
 
 .titleNews {
-  font-size: 3rem;
-  margin: 5rem auto 2rem auto;
+  font-size: 6rem;
+  /* margin: 20vh auto 2rem auto; */
+  color: #f5cf14;
 }
 
 .newsTitle {
   font-size: 3rem;
-  margin: 5rem auto 2rem auto;
+  margin: 2rem auto 2rem auto;
 }
 
 .newsCard {
   width: 90%;
   margin: 2rem;
   padding: 2rem;
-  border-bottom: 0.2rem solid #f3d743; 
-  border-radius: 0; 
+  border-bottom: 0.2rem solid #f3d743;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

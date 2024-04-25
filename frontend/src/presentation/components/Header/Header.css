@@ -65,7 +65,6 @@
   align-items: center;
   justify-content: flex-end;
   margin-right: 0;
-  margin-top: 2.5vw;
 }
 
 .hamburgerButton {
@@ -97,14 +96,13 @@
   }
 
   .headerContainer img {
-    min-width: 16vw;
+    width: 14vh;
   }
   .headerLogo {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 100;
-    margin-top: 2vh;
   }
   .headerContainer {
     height: 10vh;
@@ -115,5 +113,8 @@
   .headerOptions.open {
     display: flex;
     align-items: center;
+  }
+  .hamburgerButtonContainer {
+    margin-top: 0;
   }
 }

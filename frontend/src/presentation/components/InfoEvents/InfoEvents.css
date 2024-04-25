@@ -38,3 +38,24 @@
   border-radius: 1.5rem;
   height: 50vh;
 }
+
+@media screen and (max-width: 768px) {
+  .eventsContainter {
+    display: flex;
+    padding: 3rem;
+    margin: 10rem auto ;
+  }
+
+  .containerImgs {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin: 7vh 0;
+    flex-direction: column;
+  }
+
+  .containerImgs img {
+    width: 90vw;
+  }
+
+}

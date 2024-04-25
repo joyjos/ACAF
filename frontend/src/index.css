@@ -8,3 +8,40 @@
   font-size: 62.5%;
   list-style-type: none;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .sliderTitle {
+    font-size: 4vw;
+  }
+
+  .infoHomeImages {
+    flex-direction: column;
+  }
+
+  .infoHomeImages img {
+    width: 88vw;
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sliderTitle {
+    font-size: 6vw;
+  }
+
+  .headerHomeLogo {
+    margin-top: 0.1vh;
+    
+  }
+
+  .infoHomeImages {
+    flex-direction: column;
+  }
+
+  .infoHomeImages img {
+    width: 88vw;
+    margin-bottom: 10vh;
+  }
+}

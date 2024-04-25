@@ -33,8 +33,7 @@ export default function Header() {
       <Link to="/">
         <img src={acaf} alt="logo" className="headerLogo" />
       </Link>
-      <div className={`headerContainer ${isSticky ? "sticky" : ""}`}>
-        <section className={`headerOptions ${isMobileMenuOpen ? "open" : ""}`}>
+      <section className={`headerOptions ${isMobileMenuOpen ? "open" : ""}`}>
         <Link to="/aboutus">
           <p>Quiénes somos</p>
         </Link>
@@ -48,12 +47,11 @@ export default function Header() {
           <p>Multimedia</p>
         </Link>
       </section>
-        <div className="hamburgerButtonContainer">
-          <button className="hamburgerButton" onClick={toggleMobileMenu}>
-            ☰
-          </button>
-        </div>
-    </div>
+      <div className="hamburgerButtonContainer">
+        <button className="hamburgerButton" onClick={toggleMobileMenu}>
+          ☰
+        </button>
+      </div>
     </div>
   );
 }

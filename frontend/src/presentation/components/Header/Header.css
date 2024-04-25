@@ -8,30 +8,29 @@
   display: flex;
   min-height: 8.5vh;
   justify-content: space-between;
-}
-
-.headerContainer {
+  align-items: center;
   background-color: #f3d743;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .headerContainer img {
   width: 6vw;
 }
 
 .headerLogo {
   width: 23rem;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    margin-top: -1.5vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  margin: -1.5vh auto auto 2vw;
 }
 
 .headerOptions {
   display: flex;
   min-width: 25vw;
   gap: 3vw;
-  margin: 3vh 3vh auto auto;
+  margin-right: 3vw;
 }
 
 .headerOptions p {
@@ -39,7 +38,6 @@
   font-weight: 500;
   color: rgba(34, 34, 34, 0.9);
 }
-
 
 .headerOptions p {
   cursor: pointer;
@@ -70,7 +68,6 @@
   margin-top: 2.5vw;
 }
 
-
 .hamburgerButton {
   font-size: 2rem;
   background-color: transparent;
@@ -99,9 +96,9 @@
     margin: 0rem 0rem auto auto;
   }
 
-    .headerContainer img {
-      min-width: 16vw;
-    }
+  .headerContainer img {
+    min-width: 16vw;
+  }
   .headerLogo {
     position: absolute;
     left: 0;
@@ -109,12 +106,12 @@
     z-index: 100;
     margin-top: -1.5vh;
   }
-    .headerContainer {
-      height: 10vh;
-      background-color: #f3d743;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-      z-index: 65;
-    }
+  .headerContainer {
+    height: 10vh;
+    background-color: #f3d743;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 65;
+  }
   .headerOptions.open {
     display: flex;
     align-items: center;

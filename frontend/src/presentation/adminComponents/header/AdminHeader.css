@@ -2,6 +2,7 @@
   background-color: #6bc8e6;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3rem;
 }
 
@@ -13,4 +14,10 @@
 
 .headerAdmin img {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .headerAdmin a {
+    font-size: 5vw;
+  }
 }

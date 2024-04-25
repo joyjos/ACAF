@@ -40,3 +40,20 @@
 .css-1pxa9xg-MuiAlert-message {
   font-size: 1.5rem !important;
 }
+
+@media screen and (max-width: 768px) {
+
+  .formContainerAdmin h1 {
+    margin: 5vh 0 auto 0;
+    font-size: 5vw;
+  }
+
+  .formContainerAdmin input {
+    width: 70vw;
+  }
+
+  .formContainerAdmin label {
+    font-size: 3vw;
+   }
+   
+}

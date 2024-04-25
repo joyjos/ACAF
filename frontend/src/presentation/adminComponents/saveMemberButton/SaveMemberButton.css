@@ -9,3 +9,12 @@ margin: 2rem;
 width: 35rem;
 cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+
+    .buttonSave {
+        width: 70vw;
+        font-size: 3vw;
+    }
+     
+  }

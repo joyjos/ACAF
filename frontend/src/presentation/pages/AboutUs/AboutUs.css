@@ -21,11 +21,10 @@
   font-size: 6rem;
   display: flex;
   align-items: flex-start;
- color: #f5cf14;
+  color: #f5cf14;
 }
 
-
-.contentAbout p{
+.contentAbout p {
   font-size: 1.8rem;
   text-align: justify;
   margin: 2rem 0;
@@ -34,4 +33,25 @@
 .mapContainer {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .titleAbout {
+   align-items: center;
+   justify-content: center;
+  }
+
+  .aboutContainer {
+    padding: 0.5rem;
+    margin: 14vh 5rem auto 5rem;
+  }
+
+  .aboutContainer div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContainer img {
+    width: 80vw;
+  }
 }

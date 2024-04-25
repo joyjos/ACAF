@@ -35,6 +35,9 @@
   background-color: rgba(0, 0, 0, 0.75);
   transition: opacity 0.3s ease-in-out;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerText p {
@@ -53,4 +56,16 @@
   gap: 4rem;
   width: max-content;
   margin: 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .containerMultimedia div {
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 2rem;
+  }
+
+  .containerMultimedia img {
+    width: 40vw;
+  }
 }

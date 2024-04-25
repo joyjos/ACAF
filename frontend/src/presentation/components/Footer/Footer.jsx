@@ -8,21 +8,15 @@ export default function Footer() {
     <footer>
       <section className="footerOptions">
         <section className="linkContainer">
-          <Link to="/aboutus">
-            <p>Quiénes somos</p>
-          </Link>
-          <Link to="/events">
-            <p>Fiestas</p>
-          </Link>
-          <Link to="/news">
-            <p>Noticias</p>
-          </Link>
-          <Link>
-            <p>Multimedia</p>
+          <Link to="/aboutus">Quiénes somos</Link>
+          <Link to="/events">Fiestas</Link>
+          <Link to="/news">Noticias</Link>
+          <Link to="/multimedia">Multimedia</Link>
+          <Link to="mailto:asociacionculturalarenesca@gmail.com?subject=Dudas o sugerencias">
+            asociacionculturalarenesca@gmail.com
           </Link>
         </section>
         <section className="derContainer">
-        <Link to="mailto:asociacionculturalarenesca@gmail.com?subject=Dudas o sugerencias" className="contactFooter">asociacionculturalarenesca@gmail.com</Link>
           <p>
             {" "}
             © 2024 ACAF. Todos los derechos reservados.{" "}
@@ -41,7 +35,7 @@ export default function Footer() {
           <img src={logoInstagram} className="logoInstagram"></img>
         </Link>
       </section>
-      <section>
+      <section className="footerLogo">
         <img
           className="footerLogo"
           src="../../../../src/presentation/assets/ACAF.svg"
@@ -49,5 +43,5 @@ export default function Footer() {
         />
       </section>
     </footer>
-  )
+  );
 }

@@ -6,8 +6,8 @@
   z-index: 80;
   transition: background-color 0.5s ease-in-out;
   display: flex;
+  min-height: 8.5vh;
   justify-content: space-between;
-  padding-bottom: 2.5rem;
 }
 
 .headerContainer {
@@ -15,7 +15,7 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .headerContainer img {
-  width: 8vw;
+  width: 6vw;
 }
 
 .headerLogo {
@@ -29,12 +29,13 @@
 
 .headerOptions {
   display: flex;
-  gap: 3rem;
-  margin: 3rem 3rem auto auto;
+  min-width: 25vw;
+  gap: 3vw;
+  margin: 3vh 3vh auto auto;
 }
 
 .headerOptions p {
-  font-size: 1.8rem;
+  font-size: 1vw;
   font-weight: 500;
   color: rgba(34, 34, 34, 0.9);
 }

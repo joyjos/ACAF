@@ -24,19 +24,21 @@ footer {
   gap: 1.5rem;
   margin: 0;
   text-align: center;
+  margin-left: 2vw;
 }
 
 .linkContainer {
   display: flex;
   gap: 2rem;
   margin-bottom: 3rem;
-  margin-left: 2vw;
 }
 
 .linkContainer a {
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: #000;
+  margin-left: 3vw;
+  transition: color 0.2s ease;
 }
 
 .linkContainer p {
@@ -62,23 +64,21 @@ footer {
 .derContainer strong {
   font-size: 1.5rem;
 }
-.logoFacebook {
-  width: 30px;
-}
 
+.logoFacebook,
 .logoInstagram {
   width: 30px;
 }
 
-.derContainer{
+.derContainer {
   display: flex;
   flex-direction: column;
   gap: 4.5rem;
 }
-.derContainer a:hover{
-color: #575757;
+.linkContainer a:hover {
+  color: #575757;
 }
 
-.contactFooter {
-  color: black;
+.footerLogo {
+  margin-right: 2vw;
 }

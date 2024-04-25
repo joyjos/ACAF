@@ -3,6 +3,47 @@ import "./InfoNews.css";
 export default function InfoNews() {
   const noticias = [
     {
+      img: "../../../../src/presentation/assets/Procesión_Marinera_de_San_Juan.jpg",
+      titulo:
+        "Procesión marinera de San Juan de la Arena: Un homenaje a la Virgen del Carmen y a los marineros",
+      contenido: (
+        <>
+          <p>
+            San Juan de la Arena, 24 de junio de 2024 - Miles de personas se
+            congregaron hoy en San Juan de la Arena para presenciar la
+            tradicional procesión marinera, uno de los actos más destacados de
+            las fiestas patronales en honor a San Juan Bautista y a la Virgen
+            del Carmen.
+          </p>
+          <p>
+            La procesión comenzó a las 13:00 horas desde la iglesia parroquial
+            de San Juan Bautista, donde se encuentra la imagen del santo. La
+            comitiva, acompañada por las autoridades locales, cofradías, grupos
+            folclóricos y numeroso público, recorrió las calles céntricas del
+            pueblo hasta llegar a la ría del Nalón.
+          </p>
+          <p>
+            A su llegada al puerto, las imágenes de San Juan Bautista y la
+            Virgen del Carmen fueron embarcadas en dos embarcaciones engalanadas
+            para realizar una procesión marítima por la ría. Numerosas
+            embarcaciones pesqueras y deportivas se unieron a la procesión,
+            creando un colorido espectáculo en el mar.
+          </p>
+          <p>
+            Tras la procesión marítima, las imágenes regresaron a la iglesia
+            parroquial, donde se celebró una misa solemne. La jornada festiva
+            concluyó con una verbena popular en la plaza del pueblo.
+          </p>
+          <p>
+            La procesión marinera de San Juan de la Arena es una tradición
+            centenaria que tiene un profundo significado para los vecinos del
+            pueblo. Este acto religioso rinde homenaje a la Virgen del Carmen,
+            patrona de los marineros, y a San Juan Bautista, patrón del pueblo.
+          </p>
+        </>
+      ),
+    },
+    {
       img: "../../../../src/presentation/assets/FogueraSanJuan.jpg",
       titulo:
         "San Juan de la Arena prepara una hoguera de récord para celebrar San Juan",
@@ -11,7 +52,7 @@ export default function InfoNews() {
           <p>
             Los vecinos de San Juan de la Arena están ultimando los detalles
             para la celebración de la hoguera de San Juan, que tendrá lugar el
-            próximo viernes 28 de junio.
+            próximo domingo 23 de junio.
           </p>
           <p>
             Este año, la fiesta tendrá un carácter especial, ya que se pretende
@@ -70,48 +111,7 @@ export default function InfoNews() {
           </p>
         </>
       ),
-    },
-    {
-      img: "../../../../src/presentation/assets/Procesión_Marinera_de_San_Juan.jpg",
-      titulo:
-        "Procesión marinera de San Juan de la Arena: Un homenaje a la Virgen del Carmen y a los marineros",
-      contenido: (
-        <>
-          <p>
-            San Juan de la Arena, 24 de junio de 2024 - Miles de personas se
-            congregaron hoy en San Juan de la Arena para presenciar la
-            tradicional procesión marinera, uno de los actos más destacados de
-            las fiestas patronales en honor a San Juan Bautista y a la Virgen
-            del Carmen.
-          </p>
-          <p>
-            La procesión comenzó a las 13:00 horas desde la iglesia parroquial
-            de San Juan Bautista, donde se encuentra la imagen del santo. La
-            comitiva, acompañada por las autoridades locales, cofradías, grupos
-            folclóricos y numeroso público, recorrió las calles céntricas del
-            pueblo hasta llegar a la ría del Nalón.
-          </p>
-          <p>
-            A su llegada al puerto, las imágenes de San Juan Bautista y la
-            Virgen del Carmen fueron embarcadas en dos embarcaciones engalanadas
-            para realizar una procesión marítima por la ría. Numerosas
-            embarcaciones pesqueras y deportivas se unieron a la procesión,
-            creando un colorido espectáculo en el mar.
-          </p>
-          <p>
-            Tras la procesión marítima, las imágenes regresaron a la iglesia
-            parroquial, donde se celebró una misa solemne. La jornada festiva
-            concluyó con una verbena popular en la plaza del pueblo.
-          </p>
-          <p>
-            La procesión marinera de San Juan de la Arena es una tradición
-            centenaria que tiene un profundo significado para los vecinos del
-            pueblo. Este acto religioso rinde homenaje a la Virgen del Carmen,
-            patrona de los marineros, y a San Juan Bautista, patrón del pueblo.
-          </p>
-        </>
-      ),
-    },
+    }
   ];
 
   return (

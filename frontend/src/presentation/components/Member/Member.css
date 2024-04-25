@@ -59,3 +59,15 @@ div:where(.swal2-container) .swal2-html-container span {
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm, div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
   font-size: 1.5rem !important;
 }
+
+@media screen and (max-width: 768px) {
+
+  .titlePartner h2 {
+    font-size: 3vw;
+  }
+
+  .member p,
+.member input {
+  font-size: 3vw;
+}
+}

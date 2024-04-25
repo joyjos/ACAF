@@ -1,11 +1,21 @@
 .containerPartnerList {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap:20px;
 }
 
 .containerPartnerList h1 {
   font-size: 5rem;
   margin-top: 4rem;
-  margin-left: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+  .containerPartnerList h1{
+    font-size: 5vw;
+  }
+
+  .userSearchContainer__Field-Input::placeholder {
+    font-size: 3vw;
+  }
 }

@@ -103,6 +103,10 @@
     margin: 0rem 0rem auto auto;
   }
 
+  .headerHomeContainer {
+    padding-bottom: 1.7vh;
+  }
+
   .headerHomeContainer.sticky {
     height: 11vh;
     background-color: #f3d743;

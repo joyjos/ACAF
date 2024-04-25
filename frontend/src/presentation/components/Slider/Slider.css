@@ -29,3 +29,9 @@
 .swiper-button-next {
   color: #f3d743 !important;
 }
+
+@media screen and (max-width: 768px) {
+  .relative img {
+    object-fit: cover;
+  }
+}

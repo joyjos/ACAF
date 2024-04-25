@@ -83,3 +83,30 @@ footer {
   margin-right: 2vw;
   width: 10vw;
 }
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .footerOptions {
+    font-size: 3rem;
+    margin: auto 0 2vh 0;
+  }
+
+  .linkContainer {
+    flex-direction: column;
+    margin: 3vh auto 1vh auto;
+  }
+
+  .linkContainer a {
+    font-size:1.2rem;
+    margin: 0;
+  }
+
+  .footerLogo {
+    width: 20vw;
+    margin: 0;
+  }
+}

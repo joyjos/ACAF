@@ -38,7 +38,7 @@ export default function Footer() {
       <section className="footerLogo">
         <img
           className="footerLogo"
-          src="../../../../src/presentation/assets/ACAF.svg"
+          src="../../../../src/presentation/assets/img/ACAF.svg"
           alt="Logo ACAF"
         />
       </section>

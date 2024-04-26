@@ -32,7 +32,7 @@ export default function HeaderHome() {
     <div className="headerRelative">
       <img
         className="headerHomeLogo"
-        src="../../../../src/presentation/assets/ACAF.svg"
+        src="../../../../src/presentation/assets/img/ACAF.svg"
         alt="Logo ACAF"
       />
       <div className={`headerHomeContainer ${isSticky ? "sticky" : ""}`}>
@@ -54,7 +54,7 @@ export default function HeaderHome() {
           <Link to="/login">
             <img
               className="headerHomeIcon"
-              src="../../../../src/presentation/assets/userLogo.svg"
+              src="../../../../src/presentation/assets/img/userLogo.svg"
               alt="User"
             />
           </Link>

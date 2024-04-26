@@ -16,27 +16,25 @@ export default function Slider() {
       >
         <SwiperSlide>
           <img
-            src="../../../../src/presentation/assets/imgSlider1.jpg"
+            src="../../../../src/presentation/assets/img/imgSlider1.jpg"
             alt="Playa de San Juan de la Arena"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="../../../../src/presentation/assets/imgSlider2.jpg"
+            src="../../../../src/presentation/assets/img/imgSlider2.jpg"
             alt="Playa de San Juan de la Arena"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="../../../../src/presentation/assets/imgSlider3.jpg"
+            src="../../../../src/presentation/assets/img/imgSlider3.jpg"
             alt="Playa de San Juan de la Arena"
           />
         </SwiperSlide>
       </Swiper>
       <h1 className="sliderTitle">
-        ASOCIACIÓN <br />
-        CULTURAL ARENESCA
-        <br /> DE FESTEJOS
+        ASOCIACIÓN <br /> CULTURAL ARENESCA <br /> DE FESTEJOS
       </h1>
     </div>
   );

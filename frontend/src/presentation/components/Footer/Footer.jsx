@@ -1,34 +1,47 @@
 import "./Footer.css";
-import logoFacebook from "../../assets/facebook.svg"
-import logoInstagram from "../../assets/instagram.svg"
+import logoFacebook from "../../assets/img/facebook.svg";
+import logoInstagram from "../../assets/img/instagram.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
-    return (
-        <footer>
-            <section className="footerOptions">
-                <section className="linkContainer">
-                <p>Quiénes somos</p>
-                <p>Fiestas</p>
-                <p>Actividades</p>
-                <p>Noticias</p>
-                <p>Multimedia</p>
-                <p>Hazte socio</p>
-                </section>
-                <section className="derContainer">
-                    <p> © 2024 ACAF. Todos los derechos reservados.  <strong>AVISO LEGAL</strong></p>
-                </section>
-            </section>
-            <section  className="socialNetworks">
-               <img src={logoFacebook} className="logoFacebook" ></img>
-               <img src={logoInstagram} className="logoInstagram" ></img>
-            </section>
-            <section>
-                <img
-                    className="footerLogo"
-                    src="../../../../src/presentation/assets/ACAF.svg"
-                    alt="Logo ACAF"
-                />
-            </section>
-        </footer>
-    );
+  return (
+    <footer>
+      <section className="footerOptions">
+        <section className="linkContainer">
+          <Link to="/aboutus">Quiénes somos</Link>
+          <Link to="/events">Fiestas</Link>
+          <Link to="/news">Noticias</Link>
+          <Link to="/multimedia">Multimedia</Link>
+          <Link to="mailto:asociacionculturalarenesca@gmail.com?subject=Dudas o sugerencias">
+            asociacionculturalarenesca@gmail.com
+          </Link>
+        </section>
+        <section className="derContainer">
+          <p>
+            {" "}
+            © 2024 ACAF. Todos los derechos reservados.{" "}
+            <strong>AVISO LEGAL</strong>
+          </p>
+        </section>
+      </section>
+      <section className="socialNetworks">
+        <Link
+          target="_blank"
+          to="https://www.facebook.com/ASOCIACIONCULTURALARENESCADEFESTEJOS"
+        >
+          <img src={logoFacebook} className="logoFacebook"></img>
+        </Link>
+        <Link target="_blank" to="https://www.instagram.com/acaf_larena">
+          <img src={logoInstagram} className="logoInstagram"></img>
+        </Link>
+      </section>
+      <section className="footerLogo">
+        <img
+          className="footerLogo"
+          src="../../../../src/presentation/assets/img/ACAF.svg"
+          alt="Logo ACAF"
+        />
+      </section>
+    </footer>
+  );
 }

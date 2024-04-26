@@ -1,10 +1,12 @@
-import './App.css'
-import AppRouter from "./middleware/router/AppRouter"
+import "./App.css";
+import AppRouter from "./middleware/router/AppRouter";
 
-function App() { 
+function App() {
   return (
-   <><AppRouter /></>
-  )
+    <>
+      <AppRouter />
+    </>
+  );
 }
 
-export default App
+export default App;

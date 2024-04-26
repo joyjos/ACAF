@@ -1,0 +1,73 @@
+.titlePartner {
+  width: 73vw;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.titlePartner h2 {
+  flex: 1;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.memberMapContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.memberContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member {
+  width: 70vw;
+  display: flex;
+  background-color: #6bc8e6;
+  border-radius: 10px;
+}
+
+.member p,
+.member input {
+  flex: 1;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #6bc8e6;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.member input {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+div:where(.swal2-container) .swal2-html-container span {
+  font-size: 2.5rem !important;
+  margin: 2rem !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm, div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+  font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .titlePartner h2 {
+    font-size: 3vw;
+  }
+
+  .member p,
+.member input {
+  font-size: 3vw;
+}
+}

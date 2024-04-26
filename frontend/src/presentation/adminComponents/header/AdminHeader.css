@@ -1,0 +1,23 @@
+.headerAdmin {
+  background-color: #6bc8e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.headerAdmin a {
+  font-size: 2.5rem;
+  color: #575757;
+  font-weight: bold;
+}
+
+.headerAdmin img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .headerAdmin a {
+    font-size: 5vw;
+  }
+}

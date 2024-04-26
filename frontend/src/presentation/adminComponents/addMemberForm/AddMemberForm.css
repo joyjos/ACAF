@@ -1,0 +1,59 @@
+.formContainerAdmin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formContainerAdmin h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-left: -55rem;
+}
+
+.formContainerAdmin form {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+ margin-top: 4rem;
+}
+
+.formContainerAdmin label {
+ margin: 1rem 0;
+}
+
+
+.formContainerAdmin input {
+  font-size: 4rem;
+  border: 1px solid #6BC8E6;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  width: 95rem;
+}
+
+::placeholder {
+  font-size: 2rem;
+ 
+}
+
+.css-1pxa9xg-MuiAlert-message {
+  font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .formContainerAdmin h1 {
+    margin: 5vh 0 auto 0;
+    font-size: 5vw;
+  }
+
+  .formContainerAdmin input {
+    width: 70vw;
+  }
+
+  .formContainerAdmin label {
+    font-size: 3vw;
+   }
+   
+}

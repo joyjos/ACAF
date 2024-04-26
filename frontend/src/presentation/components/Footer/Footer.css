@@ -1,62 +1,112 @@
 footer {
-   position:absolute;
-   width:100%;
-    background-color: #F3D743;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index:10;
+  position: relative;
+  width: 100%;
+  background-color: #f3d743;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 }
 
 .footerContainer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 15%px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
 }
 
 .footerOptions {
-    font-size: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap:1.5rem;
-    margin:0;
-    text-align: center;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  text-align: center;
+  margin-left: 2vw;
 }
 
 .linkContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    margin-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  font-size: 1vw;
+  color: #000;
+  margin-left: 3vw;
+  transition: color 0.2s ease;
 }
 
 .linkContainer p {
-    flex-basis: calc(25% - 2rem);
-    margin: 0;
-
+  flex-basis: calc(25% - 2rem);
+  margin: 0;
 }
 
 .footerLogo {
-    width: 20rem;
+  width: 20rem;
 }
 
 .socialNetworks {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.derContainer {
+  margin-left: 2vw;
 }
 
 .derContainer strong {
-     font-size: 1.5rem;
-}
-.logoFacebook {
-    width: 30px;
+  font-size: 1.5rem;
 }
 
+.logoFacebook,
 .logoInstagram {
-    width: 30px;
+  width: 30px;
+}
+
+.derContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+.linkContainer a:hover {
+  color: #575757;
+}
+
+.footerLogo {
+  margin-right: 2vw;
+  width: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .footerOptions {
+    font-size: 3rem;
+    margin: auto 0 2vh 0;
+  }
+
+  .linkContainer {
+    flex-direction: column;
+    margin: 3vh auto 1vh auto;
+  }
+
+  .linkContainer a {
+    font-size:1.2rem;
+    margin: 0;
+  }
+
+  .footerLogo {
+    width: 20vw;
+    margin: 0;
+  }
 }

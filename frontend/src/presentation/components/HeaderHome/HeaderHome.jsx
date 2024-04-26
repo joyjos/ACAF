@@ -36,7 +36,9 @@ export default function HeaderHome() {
         alt="Logo ACAF"
       />
       <div className={`headerHomeContainer ${isSticky ? "sticky" : ""}`}>
-        <section className={`headerHomeOptions ${isMobileMenuOpen ? "open" : ""}`}>
+        <section
+          className={`headerHomeOptions ${isMobileMenuOpen ? "open" : ""}`}
+        >
           <Link to="/aboutus">
             <p>Quiénes somos</p>
           </Link>

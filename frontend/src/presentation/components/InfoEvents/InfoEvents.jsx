@@ -1,7 +1,7 @@
 import "./InfoEvents.css";
-import procesion from "../../assets/procesion_Marinera_de_San_Juan.jpg";
-import foguera from "../../assets/FogueraSanJuan.jpg";
-import redes from "../../assets/redesProcesion.jpg"
+import procesion from "../../assets/img/procesionSanJuan.jpg";
+import foguera from "../../assets/img/FogueraSanJuan.jpg";
+import redes from "../../assets/img/redesProcesion.jpg";
 
 export default function InfoEvents() {
   return (

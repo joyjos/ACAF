@@ -1,6 +1,6 @@
 import "./Footer.css";
-import logoFacebook from "../../assets/facebook.svg";
-import logoInstagram from "../../assets/instagram.svg";
+import logoFacebook from "../../assets/img/facebook.svg";
+import logoInstagram from "../../assets/img/instagram.svg";
 import { Link } from "react-router-dom";
 
 export default function Footer() {

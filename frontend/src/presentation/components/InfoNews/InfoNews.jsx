@@ -3,7 +3,7 @@ import "./InfoNews.css";
 export default function InfoNews() {
   const noticias = [
     {
-      img: "../../../../src/presentation/assets/Procesión_Marinera_de_San_Juan.jpg",
+      img: "../../../../src/presentation/assets/img/procesionSanJuan.jpg",
       titulo:
         "Procesión marinera de San Juan de la Arena: Un homenaje a la Virgen del Carmen y a los marineros",
       contenido: (
@@ -44,7 +44,7 @@ export default function InfoNews() {
       ),
     },
     {
-      img: "../../../../src/presentation/assets/FogueraSanJuan.jpg",
+      img: "../../../../src/presentation/assets/img/FogueraSanJuan.jpg",
       titulo:
         "San Juan de la Arena prepara una hoguera de récord para celebrar San Juan",
       contenido: (

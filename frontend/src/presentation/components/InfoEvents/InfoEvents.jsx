@@ -1,5 +1,5 @@
 import "./InfoEvents.css";
-import procesión from "../../assets/Procesión_Marinera_de_San_Juan.jpg";
+import procesion from "../../assets/procesion_Marinera_de_San_Juan.jpg";
 import foguera from "../../assets/FogueraSanJuan.jpg";
 import redes from "../../assets/redesProcesion.jpg"
 
@@ -26,26 +26,26 @@ export default function InfoEvents() {
           cual, las orquestas animan la noche en el prao de la rula. La mañana
           del 24, la fiesta continúa en nuestro pueblo con un marcado sabor
           marinero. Engalanados con sus trajes de marineros, los vecinos salen a
-          las calles. Los santos son sacados en procesión, recorriendo las
+          las calles. Los santos son sacados en procesion, recorriendo las
           calles del pueblo en un ambiente de fervor y alegría. Tenemos
           charanga, gaitas y orquesta para la hora del vermut, no creo que
           exista un plan mejor ¿verdad?
         </p>
         <div className="containerImgs">
           <img src={foguera} alt="foguera" />
-          <img src={procesión} alt="procesión" />
+          <img src={procesion} alt="procesion" />
         </div>
         <h3>San Telmo</h3>
         <p className="contentEvents">
           Las fiestas de San Telmo son el broche de oro del verano en San Juan
           de la Arena. Un fin de semana cargado de música, bailes, procesiones
-          y, sobre todo, unión entre vecinos y visitantes. En esta procesión, a
+          y, sobre todo, unión entre vecinos y visitantes. En esta procesion, a
           diferencia de la que se celebra en San Juan, las redes tienen un papel
           protagonista. Llevadas por los marineros del pueblo, simbolizan la
           importancia de la pesca para San Juan de la Arena y rinden homenaje a
           su larga tradición marinera. Un gesto que emociona a los vecinos y
           recuerda el estrecho vínculo que une al pueblo con el mar. Cuando la
-          procesión pasa cerca de la ria, algunos de los santos se acercan a
+          procesion pasa cerca de la ria, algunos de los santos se acercan a
           ella y los marineros que los llevan, tiran al agua flores en una señal
           de homenajear a los marineros caidos en la mar.
         </p>

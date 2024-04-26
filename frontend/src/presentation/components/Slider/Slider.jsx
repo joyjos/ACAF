@@ -1,6 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Slider.css";
 
+import foto1 from "../../../../src/presentation/assets/img/imgSlider1.jpg";
+import foto2 from "../../../../src/presentation/assets/img/imgSlider2.jpg";
+import foto3 from "../../../../src/presentation/assets/img/imgSlider3.jpg";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -16,19 +20,19 @@ export default function Slider() {
       >
         <SwiperSlide>
           <img
-            src="../../../../src/presentation/assets/img/imgSlider1.jpg"
+            src= {foto1}
             alt="Playa de San Juan de la Arena"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="../../../../src/presentation/assets/img/imgSlider2.jpg"
+            src={foto2}
             alt="Playa de San Juan de la Arena"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="../../../../src/presentation/assets/img/imgSlider3.jpg"
+            src={foto3}
             alt="Playa de San Juan de la Arena"
           />
         </SwiperSlide>

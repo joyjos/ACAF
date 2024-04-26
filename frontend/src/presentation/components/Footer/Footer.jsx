@@ -1,7 +1,9 @@
 import "./Footer.css";
 import logoFacebook from "../../assets/img/facebook.svg";
 import logoInstagram from "../../assets/img/instagram.svg";
+import footer from "../../../../src/presentation/assets/img/ACAF.svg"
 import { Link } from "react-router-dom";
+
 
 export default function Footer() {
   return (
@@ -38,7 +40,7 @@ export default function Footer() {
       <section className="footerLogo">
         <img
           className="footerLogo"
-          src="../../../../src/presentation/assets/img/ACAF.svg"
+          src= {footer}
           alt="Logo ACAF"
         />
       </section>

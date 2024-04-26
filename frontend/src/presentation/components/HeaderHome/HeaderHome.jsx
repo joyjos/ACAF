@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./HeaderHome.css";
 import { useEffect, useState } from "react";
+import header from "../../../../src/presentation/assets/img/ACAF.svg"
+import userLogo from "../../../../src/presentation/assets/img/userLogo.svg"
 
 export default function HeaderHome() {
   const [isSticky, setIsSticky] = useState(false);
@@ -32,7 +34,7 @@ export default function HeaderHome() {
     <div className="headerRelative">
       <img
         className="headerHomeLogo"
-        src="../../../../src/presentation/assets/img/ACAF.svg"
+        src= {header}
         alt="Logo ACAF"
       />
       <div className={`headerHomeContainer ${isSticky ? "sticky" : ""}`}>
@@ -54,7 +56,7 @@ export default function HeaderHome() {
           <Link to="/login">
             <img
               className="headerHomeIcon"
-              src="../../../../src/presentation/assets/img/userLogo.svg"
+              src= {userLogo}
               alt="User"
             />
           </Link>

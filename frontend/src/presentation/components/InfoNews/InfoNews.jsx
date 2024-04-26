@@ -1,9 +1,12 @@
 import "./InfoNews.css";
+import foto1 from "../../../../src/presentation/assets/img/procesionSanJuan.jpg"
+import foto2 from "../../../../src/presentation/assets/img/FogueraSanJuan.jpg"
+import foto3 from "../../../../src/presentation/assets/img/boat.jpg"
 
 export default function InfoNews() {
   const noticias = [
     {
-      img: "../../../../src/presentation/assets/img/procesionSanJuan.jpg",
+      img: `${foto1}` ,
       titulo:
         "Procesión marinera de San Juan de la Arena: Un homenaje a la Virgen del Carmen y a los marineros",
       contenido: (
@@ -44,7 +47,7 @@ export default function InfoNews() {
       ),
     },
     {
-      img: "../../../../src/presentation/assets/img/FogueraSanJuan.jpg",
+      img: `${foto2}`,
       titulo:
         "San Juan de la Arena prepara una hoguera de récord para celebrar San Juan",
       contenido: (
@@ -79,7 +82,7 @@ export default function InfoNews() {
       ),
     },
     {
-      img: "../../../../src/presentation/assets/img/boat.jpg",
+      img: `${foto3}`,
       titulo:
         "Los marineros de San Juan de la Arena se preparan para la costera del bonito",
       contenido: (

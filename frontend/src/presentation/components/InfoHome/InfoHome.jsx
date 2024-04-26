@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import "./InfoHome.css";
+import foto1 from "../../../../src/presentation/assets/img/imgActuality1.jpg";
+import foto2 from "../../../../src/presentation/assets/img/fotoHazteSocio.jpg";
+import foto3 from "../../../../src/presentation/assets/img/imgActuality2.jpg";
+
 
 export default function InfoHome() {
   return (
@@ -27,17 +31,17 @@ export default function InfoHome() {
       <h3 className="infoHomeActualityTitle">Actualidad</h3>
       <section className="infoHomeImages">
         <img
-          src="../../../../src/presentation/assets/img/imgActuality1.jpg"
+          src= {foto1}
           alt=""
         />
         <Link target="_blank" to="https://www.facebook.com/photo/?fbid=748137584128014&set=a.424489383159504">
           <img
-            src="../../../../src/presentation/assets/img/fotoHazteSocio.jpg"
+            src= {foto2}
             alt=""
           />
         </Link>
         <img
-          src="../../../../src/presentation/assets/img/imgActuality2.jpg"
+          src= {foto3}
           alt=""
         />
       </section>

@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/members";
+const devMode = process.env.NODE_ENV === "development";
+
+const API_URL = devMode ?
+  "http://localhost:8080/api/members" :
+  "https://acaf-production.up.railway.app";
 
 class AdminService {
   async createMember(formData) {
@@ -38,7 +42,8 @@ class AdminService {
       console.error("Error al actualizar el socio", error.response);
       throw error;
     }
-  }}
+  }
+}
 
 
 

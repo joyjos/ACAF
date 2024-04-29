@@ -9,7 +9,6 @@
   list-style-type: none;
 }
 
-/* Media Queries */
 
 @media screen and (max-width: 768px) {
   .sliderTitle {

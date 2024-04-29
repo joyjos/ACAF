@@ -60,7 +60,6 @@ export const DataProvider = ({ children }) => {
       console.log(updatedMember);
     } catch (error) {
       console.error("Error al actualizar el socio", error);
-      // Manejar el error de alguna manera
     }
   };
 

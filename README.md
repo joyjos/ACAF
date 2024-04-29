@@ -1,4 +1,4 @@
-![ACAF](./frontend/src/presentation/assets/ACAF.svg)
+![ACAF](./frontend/src/presentation/assets/img/ACAF.svg)
 
 ## Asociación Cultural Arenesca de Festejos
 Descripción de la página

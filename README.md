@@ -7,7 +7,7 @@ Descripción de la página
 -  [*01 Enlace a la página*](#section_01)
 -  [*02 Lenguajes y tecnologías*](#section_02)
 -  [*03 Estructura de carpetas*](#section_03)
--  [*04 Galeria*](#section_04)
+-  [*04 Galería*](#section_04)
 
 <a id="section_01"></a>
 ## Enlace a la página
@@ -108,5 +108,5 @@ src
 </pre>
 
 <a id="section_04"></a>
-## Galeria
+## Galería
 

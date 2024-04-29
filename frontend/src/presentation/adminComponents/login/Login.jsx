@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [error] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -16,7 +16,7 @@ export const Login = () => {
     if (email === config.adminEmail && password === config.adminPassword) {
       navigate("/homeAdmin");
     } else {
-      setError("Correo electrónico o contraseña incorrectos");
+      alert("Correo electrónico o contraseña incorrectos");
     }
   };
 

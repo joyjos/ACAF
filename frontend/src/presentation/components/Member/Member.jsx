@@ -37,7 +37,6 @@ function Member({ members }) {
       setEditedMemberData({});
     } catch (error) {
       console.error("Error al guardar los cambios del socio", error);
-      // Manejar el error de alguna manera
     }
   };
 

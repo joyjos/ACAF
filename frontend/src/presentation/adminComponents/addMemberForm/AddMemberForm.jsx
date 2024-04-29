@@ -37,6 +37,7 @@ export default function AddMemberForm() {
     postMember(formData);
     setFormData(initialFormData);
     handleClick();
+    window.location.reload();
   };
 
 

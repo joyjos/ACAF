@@ -37,6 +37,7 @@ const PartnersList = () => {
           searchQuery={searchQuery}
         />
         <Member members={filteredMembers || memberList} />
+        
       </div>
     </>
   );

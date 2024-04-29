@@ -7,9 +7,10 @@ import LaRula from "../../assets/img/laRula.jpg";
 import ProcesionMarinera from "../../assets/img/procesionMarinera.jpg";
 import SanTelmo from "../../assets/img/sanTelmo.jpg";
 import SurfPhoto from "../../assets/img/surfPhoto.jpg";
-import Playa from "../../assets/img/playa.jpg";
+// import Playa from "../../assets/img/playa.jpg";
 import VillaSanJuanArena from "../../assets/img/villaSanJuanArena.jpg";
 import HogueraSanJuan from "../../assets/img/hogueraSanJuan.jpg";
+import angula from "../../assets/img/angulas.jpg"
 
 import "./Multimedia.css";
 
@@ -24,7 +25,7 @@ export default function Multimedia() {
     { name: "Procesión Marinera", image: ProcesionMarinera },
     { name: "San Telmo", image: SanTelmo },
     { name: "Surf Photo", image: SurfPhoto },
-    { name: "Playa", image: Playa },
+    { name: "Angula", image: angula },
     { name: "Villa San Juan Arena", image: VillaSanJuanArena },
     { name: "Hoguera San Juan", image: HogueraSanJuan },
   ];

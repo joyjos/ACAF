@@ -1,4 +1,6 @@
-![ACAF](./frontend/src/presentation/assets/img/ACAF.svg)
+<div style="text-align: center;">
+    <img src="./frontend/src/presentation/assets/img/ACAF.svg" alt="ACAF" width="300" height="300">
+</div>
 
 ## Asociación Cultural Arenesca de Festejos
 Descripción de la página
@@ -110,3 +112,11 @@ src
 <a id="section_04"></a>
 ## Galería
 
+<img src="./frontend/src/presentation/assets/img/Home.png">
+<img src="./frontend/src/presentation/assets/img/AboutUs.png">
+<img src="./frontend/src/presentation/assets/img/Events.png">
+<img src="./frontend/src/presentation/assets/img/News.png">
+<img src="./frontend/src/presentation/assets/img/Multimedia.png">
+<img src="./frontend/src/presentation/assets/img/Login.png">
+<img src="./frontend/src/presentation/assets/img/NewMember.png">
+<img src="./frontend/src/presentation/assets/img/ListMembers.png">

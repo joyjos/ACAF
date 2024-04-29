@@ -4,7 +4,7 @@ const devMode = false;
 
 const API_URL = devMode ?
   "http://localhost:8080/api/members" :
-  "https://acaf-production.up.railway.app";
+  "https://acaf-production.up.railway.app/api/members";
 
 class AdminService {
   async createMember(formData) {

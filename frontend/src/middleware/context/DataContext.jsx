@@ -11,7 +11,7 @@ export const DataProvider = ({ children }) => {
   const [alertMessage, setAlertMessage] = useState("");
   const [alertSeverity, setAlertSeverity] = useState("");
   const adminService = new AdminService();
-  const API_URL = "http://localhost:8080/api/members";
+ 
   const [reload, setReload] = useState(true);
 
   const postMember = async (formData) => {
@@ -67,7 +67,6 @@ export const DataProvider = ({ children }) => {
   const value = {
     postMember,
     member,
-    API_URL,
     memberList,
     deleteMember,
     setMemberList,

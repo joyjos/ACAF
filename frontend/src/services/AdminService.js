@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const devMode = process.env.NODE_ENV === "development";
+const devMode = false;
 
 const API_URL = devMode ?
   "http://localhost:8080/api/members" :

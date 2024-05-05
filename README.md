@@ -3,7 +3,7 @@
 </div>
 
 ## Asociación Cultural Arenesca de Festejos
-Descripción de la página
+ACAF, es una Asociación de Festejos formada por un grupo de jóvenes llenos de entusiasmo y determinación, unidos por el propósito común de organizar y llevar a cabo las fiestas patronales de San Juan de la Arena.
 
 ## Tabla de contenidos
 -  [*01 Enlace a la página*](#section_01)
@@ -12,11 +12,11 @@ Descripción de la página
 -  [*04 Galería*](#section_04)
 
 <a id="section_01"></a>
-## Enlace a la página
+## 01 Enlace a la página
 https://acaf-virid.vercel.app
 
 <a id="section_02"></a>
-## Lenguajes y tecnologías
+## 02 Lenguajes y tecnologías
 
 ### Frontend
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -44,7 +44,7 @@ https://acaf-virid.vercel.app
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 
 <a id="section_03"></a>
-## Estructura de carpetas
+## 03 Estructura de carpetas
 
 ### Frontend
 <pre> 
@@ -110,7 +110,7 @@ src
 </pre>
 
 <a id="section_04"></a>
-## Galería
+## 04 Galería
 
 <img src="./frontend/src/presentation/assets/img/Home.png">
 <img src="./frontend/src/presentation/assets/img/AboutUs.png">
